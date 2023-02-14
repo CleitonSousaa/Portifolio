@@ -6,6 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Contact</title>
+    <style>
+        .fields{
+            color: #fffafa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        form{
+            margin-top: 70%;
+        }
+        .actions li{
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 10px;
+            
+            
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .actions input{
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+        .actions input:hover{
+            background-color: #00fa9a;
+
+        }
+        .fieldHalf input{
+            padding: 10px 10px;
+        }
+        .field textarea{
+            padding: 20px 5px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -21,19 +61,19 @@
           
         </div>
         <div class="a2">
-            <form method="post" action="#">
+            <form method="post" action="https://api.staticforms.xyz/submit">
+                <input type="hidden" name="accessKey" value="1640bb20-6031-4178-8e64-143ab05c2297">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/contato.html">
                 <div class="fields">
-                    <div class="field half">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" />
+                    <div class="fieldHalf">
+                        
+                        <input type="text" name="name" id="name" placeholder="Name"/>
                     </div>
-                    <div class="field half">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" />
+                    <div class="fieldHalf">
+                        <input type="text" name="email" id="email" placeholder="Email"/>
                     </div>
                     <div class="field">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
+                        <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
                     </div>
                 </div>
                 <ul class="actions">
