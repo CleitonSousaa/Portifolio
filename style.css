@@ -24,6 +24,22 @@ header li a{
     color: #fffafa;
     font-size: 1.5rem;
 }
+/*@keyframes animacao{
+    0%{
+        border-bottom: 3px solid #00fa9a;
+    }
+    
+    100%{
+        border-bottom: none;
+        color: #00fa9a;
+    }
+}*/
+.elemento1:hover{
+    border-bottom: none;
+    color: #00fa9a;
+    
+}
+
 
 header{
     display: grid;
