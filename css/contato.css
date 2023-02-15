@@ -1,0 +1,44 @@
+.fields{
+    color: #fffafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+form{
+    margin-top: 70%;
+}
+.actions li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+    
+}
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.actions input{
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.actions input:hover{
+    background-color: #00fa9a;
+
+}
+.fieldHalf input{
+    padding: 10px 10px;
+}
+.field textarea{
+    padding: 20px 5px;
+}
+
+.elemento4
+{
+    border-bottom: none;
+    color: #00fa9a;
+    
+}
