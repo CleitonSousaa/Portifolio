@@ -6,6 +6,10 @@
     align-items: center;
     gap: 10px;
 }
+.fieldHalf input::-webkit-input-placeholder{
+    color: #fffafa;
+    text-align: left;
+}
 form{
     margin-top: 10%;
     margin-left: -140px;
@@ -35,7 +39,9 @@ form{
 
 }
 .fieldHalf input{
-    padding: 10px 205px;
+    margin-top: 10PX;
+    padding: 10px ;
+    padding-right: 410px;
     border-radius: 10px;
     opacity: 1;
     background-color: #565353c5;
@@ -47,6 +53,9 @@ form{
     opacity: 1;
     background-color: #565353c5;
 }
+.field textarea::-webkit-input-placeholder{
+    color: #fffafa;
+}
 
 .elemento4
 {
@@ -56,7 +65,7 @@ form{
 }
 .redes
 {
-    margin-top: 40%;
+    margin-top: 23%;
     margin-left: -40px;
 }
 .redes li
