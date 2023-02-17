@@ -13,7 +13,7 @@ header
 {
     margin-left: 20vw;
     margin-right: 20vw;
-    background-color: #1c1c1c;
+    background-color: #1c1c1c00;
     border-bottom: 1px solid #fffafa;
     
 }
@@ -45,14 +45,7 @@ header a
     text-decoration: none;
     
 }
-section
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    
-}
+
 .a1
 {
     height: 90vh;

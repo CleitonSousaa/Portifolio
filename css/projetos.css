@@ -4,23 +4,14 @@
     color: #00fa9a;
     
 }
-.aa1{
-    background-color: #00fa9a;
-    height: 90vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
+section{
+    background-image: url(../bg-projetos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.3;
 }
-.aa1 h1{
-    text-align: center;
-    background-color: brown;
-}
-.aa2{
-    background-color: #fffafa;
-    height: 90vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
-}
-.aa2 h1{
-    text-align: center;
-    background-color: brown;
+.apresentacaoJs
+{
+    
 }

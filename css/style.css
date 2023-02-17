@@ -29,6 +29,15 @@
 
 }
 
+section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    
+}
+
 
 .elemento1{
     border-bottom: none;

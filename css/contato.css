@@ -34,6 +34,14 @@ form{
     opacity: 1;
     
 }
+section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    
+}
 .actions input:hover{
     background-color: #00fa9a;
 
