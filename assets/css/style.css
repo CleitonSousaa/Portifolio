@@ -1,3 +1,4 @@
+/*ANIMACOES*/
 @keyframes animacao{
     0%{
         opacity: 1;
@@ -28,7 +29,21 @@
     }
 
 }
+/**/
 
+
+
+/*CABECALHO*/
+.elemento1
+{
+    border-bottom: none;
+    color: #00fa9a;
+    
+}
+
+/**/
+
+/*APRESENTACAO*/
 section
 {
     display: grid;
@@ -38,19 +53,19 @@ section
     
 }
 
-
-.elemento1{
-    border-bottom: none;
-    color: #00fa9a;
-    
-}
-.aaa{
+.aaa
+{
     animation: animacao 1s linear infinite;
     color: #fffafa;
     font-size: 2rem;
 }
-.a2{
-    
+
+
+/**/
+
+/*IMAGEM*/
+.a2
+{
     height: 90vh;
     background-image: url(../img/bg.png);
     background-size: 55vh;
@@ -58,4 +73,32 @@ section
     background-position-y: 100%;
     opacity: 0.2;
     animation: bg 5s linear infinite;
+}
+/**/
+
+
+
+@media screen and (max-width: 1680px)
+{
+
+
+}
+
+@media screen and (max-width: 736px)
+{
+
+    
+
+}
+@media screen and (max-width: 480px)
+{
+
+    
+}
+
+@media screen and (max-width: 360px)
+{
+
+   
+
 }
