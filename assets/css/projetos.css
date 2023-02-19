@@ -122,6 +122,42 @@
     background: #f00;
     border: 0 solid #f00;
 }
+.descricao
+{
+
+}
+.imagem{
+    border: 1px solid white;
+    width: 200px;
+    height: 300px;
+}
+.pai{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.imagem1{
+    background-image: url(../img/organizacao.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.imagem2{
+    background-image: url(../img/codigo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagem3{
+    background-image: url(../img/execucao.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagem1:hover, .imagem2:hover, .imagem3:hover{
+    transform: scale(2.0);
+}
 
 /**/
 
