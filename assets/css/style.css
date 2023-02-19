@@ -60,7 +60,16 @@ section
     font-size: 2rem;
 }
 
+.verMais
+{
+    text-decoration: none;
+    color: #fffafa;
+}
 
+.port{
+    text-decoration: none;
+    color: #fffafa;
+}
 /**/
 
 /*IMAGEM*/
