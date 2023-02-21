@@ -29,7 +29,7 @@
     }
 
 }
-/**/
+/*----------------------------------------------------------*/
 
 
 
@@ -58,6 +58,7 @@ section
     animation: animacao 1s linear infinite;
     color: #fffafa;
     font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .verMais
@@ -70,7 +71,7 @@ section
     text-decoration: none;
     color: #fffafa;
 }
-/**/
+/*------------------------------------------------------*/
 
 /*IMAGEM*/
 .a2
@@ -83,7 +84,7 @@ section
     opacity: 0.2;
     animation: bg 5s linear infinite;
 }
-/**/
+/*-------------------------------------------------------*/
 
 
 
