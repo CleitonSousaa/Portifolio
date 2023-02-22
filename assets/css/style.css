@@ -1,4 +1,4 @@
-/*ANIMACOES*/
+/*-----------------⬇⬇--ANIMACOES--⬇⬇---------------*/
 @keyframes animacao{
     0%{
         opacity: 1;
@@ -29,86 +29,344 @@
     }
 
 }
-/*----------------------------------------------------------*/
 
-
-
-/*CABECALHO*/
-.elemento1
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+/*-----------------⬆⬆--ANIMACOES--⬆⬆---------------*/
+/*
+/*
+/*
+/*-----------------⬇⬇--CONTEUDO DO CORPO--⬇⬇---------------*/
+.cont h1
 {
-    border-bottom: none;
-    color: #00fa9a;
+    font-size: 3rem;
+    color: var(--color-white);
+    float: right;
+}
+.cont h2
+{
+    font-size: 2rem;
+    color: var(--color-orange);
+    float: right;
     
 }
+.cont p
+{
+    color: var(--color-white);
+    padding-top: 120px;
+    padding-bottom: 30px;
+    text-align: justify;
+    text-indent: 2rem;
+}
 
-/**/
+.cont
+{
+    margin: 0 auto;
+    width: 400px;
+}
+.a
+{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    text-shadow: 1px 1px 1px var(--color-black);
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin-top: 60%;
+    font-size: 1.5rem;
+}
+.cont li
+{
+    display: inline-block;
+}
+.b li
+{
+    display: inline-block;
+}
+.b1
+{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    text-shadow: 1px 1px 1px var(--color-black);
+    padding: 0px 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.b
+{
+    width: 400px;
+    margin: 0 auto;
+}
+.b8
+{
+    color: var(--color-white);
+    padding-left: 15px;
+    font-size: 1.5rem;
+}
 
-/*APRESENTACAO*/
+.b2
+{
+    color: var(--color-white);
+    padding-left: 20px;
+}
 section
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    
+  display: flex;
+  flex-direction:space-between;
+  flex-wrap:nowrap;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
-
+.esquerdo{
+  padding: 70px;
+}
 .aaa
 {
     animation: animacao 1s linear infinite;
-    color: #fffafa;
+    color: var(--color-white);
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.imagem{
+  background-image: url(../img/bg.png); 
+  height: 90vh;
+  width: 50vw;
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  
+}
+/*⬇botoes⬇*/
 .verMais
 {
     text-decoration: none;
-    color: #fffafa;
+    color: var(--color-white);
 }
 
 .port{
     text-decoration: none;
-    color: #fffafa;
-}
-/*------------------------------------------------------*/
-
-/*IMAGEM*/
-.a2
-{
-    height: 90vh;
-    background-image: url(../img/bg.png);
-    background-size: 55vh;
-    background-repeat: no-repeat;
-    background-position-y: 100%;
-    opacity: 0.2;
-    animation: bg 5s linear infinite;
-}
-/*-------------------------------------------------------*/
-
-
-
-@media screen and (max-width: 1680px)
-{
-
-
+    color: var(--color-white);
 }
 
-@media screen and (max-width: 736px)
+/*-----------------⬆⬆--CONTEUDO DO CORPO--⬆⬆---------------*/
+/*
+/*
+/*
+/*-----------------⬇⬇--ELEMENTO UNICO CABECALHO--⬇⬇---------------*/
+.elemento1
 {
-
+    border-bottom: none;
+    color: var(--color-grenn);
+}
+@media (max-width: 999px)
+{
+  .nav-list.active .elemento1
+      { 
+      border-bottom: none;
+      color: var(--color-grenn);
+      }
+}
+/*-----------------⬆⬆--ELEMENTO UNICO CABECALHO--⬆⬆---------------*/
+/*
+/*
+/*
+/*-----------------⬇⬇--RESPONSIVIDADE DO CORPO--⬇⬇---------------*/
+@media (max-width: 999px)
+{
     
-
-}
-@media screen and (max-width: 480px)
-{
-
+    body
+    {
+      overflow: hidden;
+      
+    }
+    section
+    {
+      
+    }
     
-}
+    
+    
+    .cont{
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      width: 60vw;
+      padding: 20px;
+      z-index: 0;
+      
+    }
+    .a{
+      font-size: 3rem;
+      text-shadow: 2px 2px 2px var(--color-black);
+    }
+    .b8{
+      font-size: 2rem;
+      text-shadow: 2px 2px 2px var(--color-black);
+    }
+    .aaa{
 
-@media screen and (max-width: 360px)
+    }
+    .cont h1{
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 2px var(--color-black);
+    }
+    .cont p{
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 2px var(--color-black);
+      letter-spacing: 1.5px;
+    }
+    .imagem{
+      display: none;
+    }
+
+}
+@media (max-width: 770px)
 {
-
-   
-
+    .a1{
+    
+    }
+    .a11{
+      
+    }
+    .cont{
+      
+    }
+    .a{
+      font-size: 2.5rem;
+    }
+    .b8{
+      font-size: 2rem;
+    }
+    .aaa{
+  
+    }
+    .cont h1{
+      font-size: 3rem;
+    }
+    .cont h2{
+      font-size: 2rem;
+    }
+    .cont p{
+      font-size: 1.5rem;
+      text-indent: 3rem;
+    }
+    .b{
+  
+    }
+    .b .b1{
+  
+    }
+    .b .b2{
+  
+    }
 }
+@media (max-width: 480px)
+{
+    .a1
+    {
+      background-size: 70vh;
+      background-position: -35px;
+    }
+    .a11
+    {
+
+    }
+    .cont
+    {
+    width: 80vw;
+    }
+    .a
+    {
+    font-size: 1.5rem;
+    }
+    .b8
+    {
+    font-size: 1.2rem;
+    }
+    .aaa
+    {
+
+    }
+    .cont h1
+    {
+    font-size: 1.6rem;
+    }
+    .cont h2
+    {
+      font-size: 1.1rem;
+    }
+    .cont p
+    {
+      font-size: 1rem;
+    }
+    .b
+    {
+
+    }
+  
+    .b .b1
+    {
+
+    }
+    .b .b2
+    {
+
+    }
+}
+@media (max-width: 360px)
+{
+    .a1
+    {
+
+    }
+    .a11
+    {
+
+    }
+    .cont
+    {
+
+    }
+    .a{
+
+    }
+    .b8
+    {
+
+    }
+    .aaa
+    {
+
+    }
+    .cont h1
+    {
+
+    }
+    .cont h2
+    {
+
+    }
+    .cont p
+    {
+
+    }
+    .b
+    {
+
+    }
+    .b .b1
+    {
+
+    }
+    .b .b2
+    {
+
+    }
+}
+/*-----------------⬆⬆--RESPONSIVIDADE DO CORPO--⬆⬆---------------*/

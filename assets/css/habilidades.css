@@ -78,9 +78,13 @@ body
 
 /*-------------------------------------------*/
 
-@media screen and (max-width: 1680px)
+@media (max-width: 999px)
 {
-
+    .nav-list.active .elemento2
+    { 
+    border-bottom: none;
+    color: #00fa9a;
+    }
 
 }
 

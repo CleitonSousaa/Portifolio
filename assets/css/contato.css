@@ -147,9 +147,13 @@ form
     color: #fffafa;
 }
 
-@media screen and (max-width: 1680px)
+@media (max-width: 999px)
 {
-
+    .nav-list.active .elemento4
+    { 
+    border-bottom: none;
+    color: #00fa9a;
+    }
 
 }
 
