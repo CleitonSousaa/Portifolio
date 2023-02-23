@@ -13,30 +13,77 @@ body
 /*------------------------------------------*/
 
 /*CONTEUDO*/
-
+.oq{
+    text-align: center;
+    margin-top: 5%;
+    color: var(--color-white);
+}
+.descricao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    
+}
+.descricao h3{
+    text-align: center;
+}
+.descricao div{
+    background-color: var(--color-white);
+    
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    
+    
+}
+.descricao nav{
+    height: 17vh;
+    width: 600px;
+    background-color: #00fa9a;
+}
+.descricao footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .conteinerCard
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    
     margin-top: 20px;
 }
 .conteinerCard .card
 {
-    background-color: #00fa9a;
-    width: 200px;
-    height: 300px;
-    font-size: 3rem;
-    color: #ff4500;
-    padding: 10px;
+    background-image: var(--my-gradient);
+    background-size: 100vw;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
+    position: relative;
+   
 }
-.conteinerCard .card:hover
-{
-    transform: scale(1.5);
+
+.card p{
+    
+    color: var(--color-white);
+    font-size: 1rem;
+    text-align: center;
+    
+    
+}
+.card i{
+    font-size: 3rem;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+.card:hover{
+    transform: scale(1.3);
+    cursor: pointer;
 }
 .conteinerCard .card1
 {

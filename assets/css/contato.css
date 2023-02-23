@@ -51,6 +51,15 @@ section
     color: var(--color-white);
     
 }
+.contato-p1 h2 li{
+    cursor: pointer;
+}
+.contato-p1 h2 li:hover{
+    border-bottom: 1px solid var(--colot-grenn);
+}
+.contato-p1 h2 p:nth-child(1){
+    margin-bottom: 10px;
+}
 
 
 
@@ -160,24 +169,46 @@ form
         margin-top: 0;
         margin-top: 50%;
         margin-left: 20px;
+        
        
     }
     .contato-p1 h2{
-        font-size: 1rem;
+        font-size: 1.4rem;
+        padding-right: 10px;
+        
     }
     .contato-p2 h1{
         font-size: 2rem;
         margin-top: 0;
         margin-top: 33%;
-        margin-left: 20px;
-
+        
+        text-align: center;
     }
     .contato-p1{
         border: 1px solid var(--color-white);
+        padding-left: 0;
         
     }
     .contato-p2{
         border: 1px solid var(--color-white);
+    }
+    .redes li a{
+       font-size: 2rem;
+    }
+    .redes li{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .redes{
+        margin-left: 0;
+    }
+    .field textarea{
+        margin: 0 ;
+        padding: 0px 50px;
+    }
+    .actions input{
+        margin-left: -70px;
+        
     }
 
 }

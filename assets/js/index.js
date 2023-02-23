@@ -77,3 +77,20 @@ var options = {
   });
 
 /*--------------------------------------------- */
+
+
+/*habilidades */
+
+const primeiro = document.querySelector('.card1')
+const segundo = document.querySelector('.card2')
+const terceiro = document.querySelector('.card3')
+const quarto = document.querySelector('.card4')
+const quinto = document.querySelector('.card5')
+const sexto = document.querySelector('.card6')
+const setimo = document.querySelector('.card7')
+const oitavo = document.querySelector('.card8')
+const nono = document.querySelector('.card9')
+
+('click', function(){
+  primeiro.style.backgroundColor='red'
+});
