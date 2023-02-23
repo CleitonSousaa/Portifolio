@@ -1,4 +1,7 @@
 /*LADO ESQUERDO*/
+body{
+    background-color: var(--colot-black);
+}
 section
 {
     display: grid;
@@ -10,7 +13,7 @@ section
 .elemento4
 {
     border-bottom: none;
-    color: var(--colot-grenn);
+    color: #00fa9a;
 }
 
 .redes

@@ -41,6 +41,7 @@ body
     height: 17vh;
     width: 600px;
     background-color: #00fa9a;
+    overflow: hidden;
 }
 .descricao footer {
     display: flex;
@@ -64,6 +65,8 @@ body
     height: 100px;
     border-radius: 20px;
     position: relative;
+    text-decoration: none;
+    color: var(--color-white);
    
 }
 
@@ -121,6 +124,13 @@ body
 {
     
 }
+
+
+
+
+
+
+/**/
 
 
 /*-------------------------------------------*/
