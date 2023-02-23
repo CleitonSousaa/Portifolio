@@ -1,8 +1,4 @@
 /*LADO ESQUERDO*/
-
-
-
-
 section
 {
     display: grid;
@@ -14,7 +10,7 @@ section
 .elemento4
 {
     border-bottom: none;
-    color: #00fa9a;
+    color: var(--colot-grenn);
 }
 
 .redes
@@ -45,14 +41,14 @@ section
 .contato-p1 a
 {
     text-decoration: none;
-    color: #ff4500;
+    color: var(--color-orange);
     
 }
 
 .contato-p1 h2{
     padding-top: 50px;
     padding-left: 20px;
-    color: #fffafa;
+    color: var(--color-white);
     
 }
 
@@ -64,7 +60,7 @@ section
 {
     margin-top: 40%;
     font-size: 3rem;
-    color: #fffafa;
+    color: var(--color-white);
 }
 
 form
@@ -96,7 +92,7 @@ form
 
 .actions input:hover
 {
-    background-color: #00fa9a;
+    background-color: var(--colot-grenn);
 
 }
 
@@ -127,7 +123,7 @@ form
 
 .fields
 {
-    color: #fffafa;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,13 +134,13 @@ form
 
 .fieldHalf input::-webkit-input-placeholder
 {
-    color: #fffafa;
+    color: var(--color-white);
     text-align: left;
 }
 
 .field textarea::-webkit-input-placeholder
 {
-    color: #fffafa;
+    color: var(--color-white);
 }
 
 @media (max-width: 999px)
@@ -152,17 +148,40 @@ form
     .nav-list.active .elemento4
     { 
     border-bottom: none;
-    color: #00fa9a;
+    color: var(--colot-grenn);
+    }
+    section{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10%;
+    }
+    .contato-p1 h1{
+        font-size: 2rem;
+        margin-top: 0;
+        margin-top: 50%;
+        margin-left: 20px;
+       
+    }
+    .contato-p1 h2{
+        font-size: 1rem;
+    }
+    .contato-p2 h1{
+        font-size: 2rem;
+        margin-top: 0;
+        margin-top: 33%;
+        margin-left: 20px;
+
+    }
+    .contato-p1{
+        border: 1px solid var(--color-white);
+        
+    }
+    .contato-p2{
+        border: 1px solid var(--color-white);
     }
 
 }
 
-@media screen and (max-width: 736px)
-{
-
-    
-
-}
 @media screen and (max-width: 480px)
 {
 
