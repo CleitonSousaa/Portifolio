@@ -23,6 +23,7 @@ body
     flex-direction: row;
     justify-content: space-around;
     margin-top: 5%;
+    gap: 20px;
     
 }
 .descricao h3{
@@ -40,7 +41,7 @@ body
 .descricao nav{
     height: 17vh;
     width: 600px;
-    background-color: #00fa9a;
+    background-color: var(--color-grenn);
     overflow: hidden;
 }
 .descricao footer {
@@ -69,6 +70,7 @@ body
     color: var(--color-white);
    
 }
+
 
 .card p{
     

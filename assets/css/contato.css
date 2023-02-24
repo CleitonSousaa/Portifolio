@@ -1,6 +1,11 @@
 /*LADO ESQUERDO*/
 body{
     background-color: var(--colot-black);
+    background-image: url(../img/luz.jpg);
+    background-repeat: no-repeat;
+    background-size: 110vh;
+    background-position-x: 900px;
+    background-position-y: -200px;
 }
 section
 {
@@ -8,6 +13,7 @@ section
     grid-template-columns: 1fr 1fr;
     margin-left: 20vw;
     margin-right: 20vw;
+    
 }
 
 .elemento4
@@ -188,12 +194,12 @@ form
         text-align: center;
     }
     .contato-p1{
-        border: 1px solid var(--color-white);
+        
         padding-left: 0;
         
     }
     .contato-p2{
-        border: 1px solid var(--color-white);
+        
     }
     .redes li a{
        font-size: 2rem;

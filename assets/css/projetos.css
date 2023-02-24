@@ -7,6 +7,19 @@
 /**/
 
 /*ESTILIZACAO CARD*/
+.inner1{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    height: 100vh;
+    background-position-x: 0px;
+    background-position-y: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
 .hero-slider
 {
     width: 100%;

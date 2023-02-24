@@ -17,7 +17,7 @@
 
 @keyframes bg{
     0%{
-        opacity: 0.3;
+        opacity: 0.1;
     }
     
     50%{
@@ -25,26 +25,67 @@
     }
     
     100%{
-        opacity: 0.3;
+        opacity: 0.1;
     }
 
 }
 
-@keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+@keyframes navLinkFade
+{
+  from
+  {
+    opacity: 0;
+    transform: translateX(50px);
   }
+  to
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes menu {
+  0%{
+    margin-left: 100%;
+  }
+  50%{
+    margin-left: -150%;
+  }
+  100%{
+    margin-left: 85%;
+  }
+}
 /*-----------------⬆⬆--ANIMACOES--⬆⬆---------------*/
 /*
 /*
 /*
 /*-----------------⬇⬇--CONTEUDO DO CORPO--⬇⬇---------------*/
+.bgimg{
+  animation: bg linear 7s infinite;
+}
+.slider{
+  background-color: var(--color-white);
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide i{
+  font-size: 3rem;
+  margin-left: 300px;
+  margin-top: 25px;
+  
+}
+.slide i:hover{
+  transform: scale(1.5);
+}
+
+.slide{
+  animation: menu 30s linear infinite;
+  
+}
+body{
+  overflow: hidden;
+}
 .cont h1
 {
     font-size: 3rem;
@@ -151,6 +192,7 @@ section
   
   
 }
+
 /*⬇botoes⬇*/
 .verMais
 {
