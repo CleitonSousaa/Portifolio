@@ -155,20 +155,21 @@ body{
     margin-bottom: 50px;
 }
 .imagem1{
-    background-image: url(../img/organizacao.jpeg);
+    background-image: url(../img/ms.png);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 .imagem2{
-    background-image: url(../img/codigo.jpeg);
+    background-image: url(../img/ms2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagem3{
-    background-image: url(../img/execucao.jpeg);
+    background-image: url(../img/ms2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -50px;
 }
 .imagem1:hover, .imagem2:hover, .imagem3:hover{
     transform: scale(2.0);

@@ -212,8 +212,12 @@ section
 /*-----------------⬇⬇--ELEMENTO UNICO CABECALHO--⬇⬇---------------*/
 .elemento1
 {
-    border-bottom: none;
-    color: var(--color-grenn);
+  border-bottom: none;
+  color: var(--color-grenn);
+    
+}
+.nav-list li a{
+  
 }
 @media (max-width: 999px)
 {
