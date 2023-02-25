@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="testedark.css">
+    <style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    
+/*-----------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇---------------*/
+
+
+.checkbox
+{
+  opacity: 0;
+  position: absolute;
+}
+.label
+{
+  background-color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+  position: relative;
+  height: 26px;
+
+  width: 50px;
+  transform: scale(1.5);
+}
+.label .ball
+{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+
+  top: 2px;
+  left: 2px;
+  height: 22px;
+
+  width: 22px;
+  transform: translate(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball
+{
+  transform: translateX(24px);
+}
+.fa-moon
+{
+  color: rgb(88, 88, 2);
+}
+.fa-sun
+{
+  color: rgb(255, 255, 0);
+}
+.conteiner{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+/*--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆---------------*/
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!--------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇-------------->
+    <div class="conteiner">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <div class="ball"></div>    
+        </label>
+    </div>
+    <!--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆-------------->
+
+
+    <script>
+
+        /*--------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇--------------*/
+const chk = document.getElementById('chk')
+const html = document.querySelector('html')
+
+chk.addEventListener('change', () => {
+  html.classList.toggle('dark')
+  
+})
+
+
+
+/*--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆--------------*/
+    </script>
+</body>
+</html>
