@@ -1,16 +1,1 @@
-:root
-{
---COLOR-BRANCO:white;
---COLOR-PRETO:black;
-}
-.dark:root{
---COLOR-BRANCO:rgb(217, 236, 13);
---COLOR-PRETO:rgb(22, 54, 234);
-}
-
-
-body{
-    background-color: var(--COLOR-BRANCO);   
-}
-
 

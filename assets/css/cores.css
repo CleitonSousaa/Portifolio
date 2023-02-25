@@ -1,0 +1,77 @@
+/*-----------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇---------------*/
+.checkbox
+{
+  opacity: 0;
+  position: absolute;
+}
+.conteiner .label
+{
+  background-color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+  position: relative;
+  height: 26px;
+
+  width: 50px;
+  transform: scale(1.5);
+}
+.label .ball
+{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+
+  top: 2px;
+  left: 2px;
+  height: 22px;
+
+  width: 22px;
+  transform: translate(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball
+{
+  transform: translateX(24px);
+}
+.fa-moon
+{
+  color: rgb(88, 88, 2);
+}
+.fa-sun
+{
+  color: rgb(255, 255, 0);
+}
+.conteiner{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/*--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆---------------*/
+
+
+:root
+{
+    --color-white: #fffafa;
+    --color-orange: #ff4500;
+    --color-black: #1c1c1c;
+    
+    --color-grenn: #00fa9a;
+  
+    --top-color: rgba(14, 29, 51, 0.8);
+    --bottom-color: #1c1c1c;
+    --my-gradient: linear-gradient(
+      var(--top-color),
+      var(--bottom-color)
+    );
+}
+.dark:root{
+  --color-white: #1c1c1c;
+  --color-black: #fffafa;
+}
+

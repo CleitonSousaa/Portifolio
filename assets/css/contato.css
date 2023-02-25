@@ -4,7 +4,7 @@ body{
     background-image: url(../img/luz.jpg);
     background-repeat: no-repeat;
     background-size: 110vh;
-    background-position-x: 900px;
+    background-position-x: 100%;
     background-position-y: -200px;
 }
 

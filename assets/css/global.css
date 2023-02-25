@@ -15,24 +15,6 @@
 }
 
 /*-----------------⬆⬆--ANIMACOES--⬆⬆---------------*/
-
-/*-----------------⬇⬇--VARIAVEIS CSS--⬇⬇---------------*/
-:root{
-  --color-white: #fffafa;
-  --color-orange: #ff4500;
-  --color-black: #1c1c1c;
-  
-  --color-grenn: #00fa9a;
-
-  --top-color: rgba(14, 29, 51, 0.8);
-  --bottom-color: #1c1c1c;
-  --my-gradient: linear-gradient(
-    var(--top-color),
-    var(--bottom-color)
-  );
-}
-
-/*-----------------⬆⬆--VARIAVEIS CSS--⬆⬆---------------*/
 /*
 /*
 /*
@@ -137,38 +119,47 @@ header{
 
   @media (max-width: 999px)
   {
-    header{
-      margin-left: 0vw;
+    header
+    {
+    margin-left: 0vw;
     margin-right: 0vw;
     position: relative;
     }
-    header img{
+    header img
+    {
       width: 120px;
       margin-left: 20px;
     }
     
-    .nav-list {
+    .nav-list
+    {
       position: absolute;
       display: flex;
       top: 8vh;
+
       right: 0;
       width: 50vw;
       height: 90vh;
+
       background: var(--my-gradient);
       flex-direction: column;
       align-items: center;
+
       justify-content: space-around;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
+
       border-radius: 25px;
       z-index: 1;
       
     }
     
-    .mobile-menu {
+    .mobile-menu
+    {
       display: block;
       width: 100px;
       float: right;
+
       margin-top: -25px;  
     }
   }
@@ -210,10 +201,12 @@ header{
   @media screen and (max-width: 360px)
   {
 
-    header{
+    header
+    {
       height: 60vw;
     }
-    header img{
+    header img
+    {
       margin-top: -10px;
       width: 70px;
       height: 70px;

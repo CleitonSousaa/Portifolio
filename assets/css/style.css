@@ -60,11 +60,11 @@
 /*
 /*-----------------⬇⬇--CONTEUDO DO CORPO--⬇⬇---------------*/
 .bgimg{
-  animation: bg linear 7s infinite;
+  animation: bg linear 10s infinite;
 }
 .slider{
   background-color: var(--color-white);
-  height: 10vh;
+  height: 5vh;
   width: 100%;
   overflow: hidden;
 }
@@ -72,7 +72,7 @@
 .slide i{
   font-size: 3rem;
   margin-left: 300px;
-  margin-top: 25px;
+ 
   
 }
 .slide i:hover{
@@ -80,7 +80,7 @@
 }
 
 .slide{
-  animation: menu 30s linear infinite;
+  animation: menu 100s linear infinite;
   
 }
 body{
@@ -113,6 +113,7 @@ body{
 {
     margin: 0 auto;
     width: 400px;
+    margin-top: -60px;
 }
 .a
 {

@@ -1,3 +1,15 @@
+/*--------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇--------------*/
+const chk = document.getElementById('chk')
+const html = document.querySelector('html')
+
+chk.addEventListener('change', () => {
+  html.classList.toggle('dark')
+  
+})
+
+
+
+/*--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆--------------*/
 /*cabecalho*/ 
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
@@ -77,5 +89,7 @@ var options = {
   });
 
 /*--------------------------------------------- */
+
+
 
 
