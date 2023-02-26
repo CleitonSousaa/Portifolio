@@ -63,10 +63,11 @@
   animation: bg linear 10s infinite;
 }
 .slider{
-  background-color: var(--color-white);
-  height: 5vh;
+  background-color: var(--color-whiteo);
+  height: 3rem;
   width: 100%;
   overflow: hidden;
+  margin-top: -1rem;
 }
 
 .slide i{
