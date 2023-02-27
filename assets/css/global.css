@@ -1,6 +1,31 @@
-/*-----------------⬇⬇--ANIMACOES--⬇⬇---------------*/
+/*-------------------------------CORES E MODO DARK----------------------------------*/
+:root
+{
+    /*BACKGROUND*/
 
-@keyframes animacao{
+    /*FONTES*/
+    --color-white: #fffafa;
+    --color-orange: #ff4500;
+    --color-black: #1c1c1c;
+    --color-whiteo:#eed1d1;
+    --color-grenn: #00fa9a;
+    --color-header: #fffafa58;
+  
+    --top-color: rgba(14, 29, 51, 0.8);
+    --bottom-color: #1c1c1c;
+    --my-gradient: linear-gradient(
+      var(--top-color),
+      var(--bottom-color)
+    );
+}
+.dark:root{
+  --color-white: #1c1c1c;
+  --color-black: #fffafa;
+}
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------ANIMAÇÕES---------------------------------------*/
+@keyframes animacao
+{
   0%{
       opacity: 1;
   }
@@ -14,9 +39,8 @@
   }
 
 }
-
-
-@keyframes bg{
+@keyframes bg
+{
   0%{
       opacity: 0.1;
   }
@@ -30,7 +54,6 @@
   }
 
 }
-
 @keyframes navLinkFade
 {
 from
@@ -44,7 +67,8 @@ to
   transform: translateX(0);
 }
 }
-@keyframes menu {
+@keyframes menu
+{
 0%{
   margin-left: -100%;
 }
@@ -52,11 +76,8 @@ to
   margin-left: 100%;
 }
 }
-/*-----------------⬆⬆--ANIMACOES--⬆⬆---------------*/
-/*
-/*
-/*
-/*-----------------⬇⬇--CORPO & CONFIGUCOES--⬇⬇---------------*/
+/*-----------------------------------------------------------------------------------*/
+/*-------------------------------CONFIGUÇÕES GERAIS----------------------------------*/
 *
 {
     padding: 0;
@@ -67,12 +88,59 @@ to
 body
 {
     background-color: var(--color-black);
+    overflow: hidden;
 }
-/*-----------------⬆⬆--CORPO & CONFIGUCOES--⬆⬆---------------*/
-/*
-/*
-/*
-/*-----------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇---------------*/
+.background{
+  position: absolute;
+  width: 100%;
+  height: 50vw;
+  background-image: url(/star.jpg);
+  background-size: cover;
+  z-index: 0;
+}
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------INALTERÁVEL-------------------------------------*/
+.mobile-menu
+{
+  display: none;
+  cursor: pointer;
+   
+}
+
+.mobile-menu div
+{
+  width:50px;
+  height: 4px;
+  background: var(--color-white);
+  margin: 10px;
+  transition: 0.3s;
+}
+
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+  background-color: var(--color-orange);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;  
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-11px, -11px);
+  background-color: var(--color-orange);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------CABEÇALHO---------------------------------------*/
+/*ÍCONE DO MODO DARK*/
+.conteiner
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 1;
+}
 .checkbox
 {
   opacity: 0;
@@ -118,28 +186,41 @@ body
   font-size: 0.8rem;
   color: rgb(255, 255, 0);
 }
-.conteiner{
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
-    z-index: 1;
+/*--------------------*/
+/*HABILIDADE DO PAINEL*/
+
+.slider
+{
+  background-color: var(--color-whiteo);
+  height: 3rem;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -1rem;
 }
-/*--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆---------------*/
-/*
-/*
-/*
-/*-----------------⬇⬇--CONTEUDO DO CABECALHO--⬇⬇---------------*/
-header img
+.slide i
+{
+  font-size: 3rem;
+  margin-left: 300px;
+}
+.slide i:hover
+{
+  transform: scale(1.5);
+}
+.slide
+{
+  animation: menu 100s linear infinite;
+}
+/*---------*/
+/*CABEÇALHO*/
+.cabecalho-principal img
 {
   width: 6vw;
   height: 6vw;
 }
-
 .nav-list.active
 {
   transform: translateX(10px); 
 }
-
 .nav-list li{
   display: inline-block;
   margin-right: 45px;
@@ -147,343 +228,33 @@ header img
   position: relative;
   
 }
-.nav-list li a{
-  border-bottom: 1px solid var(--color-white);
+.nav-list .elemento1
+{
+  border-bottom: none;
+  color: var(--color-grenn); 
 }
-
-ul li a{
+.nav-list ul li a{
+  border-bottom: 1px solid var(--color-white);
   text-decoration: none;
   color: var(--color-white);
 }
-header{
-  height: 15vh;
+.cabecalho-principal{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   margin-left: 15vw;
   margin-right: 15vw;
   padding-top: 5vh;
+  background-color: var(--color-header);
+  border-radius: 25px;
+  z-index: 1;
 }
-
-/*-----------------⬆⬆--CONTEUDO DO CABECALHO--⬆⬆---------------*/
-/*
-/*
-/*
-/*-----------------⬇⬇--ICONE DO MENU--⬇⬇---------------*/
-/*⬇DESATIVADO⬇*/
-.mobile-menu
-{
-  display: none;
-  cursor: pointer;
-   
-}
-
-.mobile-menu div
-{
-  width:50px;
-  height: 4px;
-  background: var(--color-white);
-  margin: 10px;
-  transition: 0.3s;
-}
-
-/*⬇ATIVADO⬇*/
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-  background-color: var(--color-orange);
-}
-
-.mobile-menu.active .line2 {
-  opacity: 0;  
-}
-
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-11px, -11px);
-  background-color: var(--color-orange);
-}
-/*--------------⬆⬆--ICONE DO MENU--⬆⬆---------------*/
-/*
-/*
-/*
-
-/*
-/*
-/*
-/*-----------------⬇⬇--RESPONSIVIDADE DO MENU--⬇⬇---------------*/
-
-  @media (max-width: 999px)
-  {
-    header
-    {
-    margin-left: 0vw;
-    margin-right: 0vw;
-    position: relative;
-    }
-    header img
-    {
-      width: 13vw;
-      height: 13vw;
-    }
-    
-    .nav-list
-    {
-      position: absolute;
-      display: flex;
-      top: 8vh;
-
-      right: 0;
-      width: 50vw;
-      height: 90vh;
-
-      background: var(--my-gradient);
-      flex-direction: column;
-      align-items: center;
-
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-
-      border-radius: 25px;
-      z-index: 1;
-      
-    }
-    
-    .mobile-menu
-    {
-      display: block;
-      width: 100px;
-      float: right;
-
-      margin-top: -25px;  
-    }
-  }
-
-
-  
-
-  @media (max-width: 375px)
-  {
-    
-    header{
-      height: 130px;
-    }
-    header img
-    {
-      width: 18vw;
-      height: 18vw;
-    }
-    .mobile-menu{
-      margin-top: -7px;
-    }
-    .nav-list {
-      position: absolute;
-      display: flex;
-      top: 15vh;
-      right: 0;
-      width: 55vw;
-      height: 85vh;
-      background: var(--my-gradient);
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-      border-radius: 25px;
-      
-    }
-   
-    
-  }
-
-  @media screen and (max-width: 375px)
-  {
-
-    header
-    {
-      height: 60vw;
-    }
-    header img
-    {
-      width: 18vw;
-      height: 18vw;
-    }
-    header{
-      height: 100px;
-    }
-    header img{
-      margin-top: 10px;
-    }
-
-
-
-    /*-----------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇---------------*/
-.checkbox
-{
-  opacity: 0;
-  position: absolute;
-  
-}
-.conteiner .label
-{
-  background-color: #000;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4px;
-  position: relative;
-  height: 10px;
-  width: 40px;
-  transform: scale(1.5);
-}
-.label .ball
-{
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: -2.5px;
-  left: 2px;
-  height: 15px;
-  width: 15px;
-  transform: translate(0px);
-  transition: transform 0.2s linear;
-}
-.checkbox:checked + .label .ball
-{
-  transform: translateX(28px);
-}
-.fa-moon
-{
-  font-size: 0.8rem;
-  color: rgb(88, 88, 2);
-}
-.fa-sun
-{
-  font-size: 0.8rem;
-  color: rgb(255, 255, 0);
-}
-.conteiner{
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 10px;
-    z-index: 1;
-    
-}
-/*--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆---------------*/
-
-  }
-/*-----------------⬆⬆--RESPONSIVIDADE DO MENU--⬆⬆---------------*/
-
-/*-----------------⬇⬇--CONTEUDO DO CORPO--⬇⬇---------------*/
-.bgimg{
-  animation: bg linear 10s infinite;
-}
-.slider{
-  background-color: var(--color-whiteo);
-  height: 3rem;
-  width: 100%;
-  overflow: hidden;
-  margin-top: -1rem;
-}
-
-.slide i{
-  font-size: 3rem;
-  margin-left: 300px;
- 
-  
-}
-.slide i:hover{
-  transform: scale(1.5);
-}
-
-/*.slide{
-  animation: menu 100s linear infinite;
-  
-}*/
-body{
-  overflow: hidden;
-}
-.cont h1
-{
-    font-size: 3rem;
-    color: var(--color-white);
-    float: right;
-}
-.cont h2
-{
-    font-size: 2rem;
-    color: var(--color-orange);
-    float: right;
-    
-}
-.descricao
-{
-    color: var(--color-white);
-    padding-top: 120px;
-    padding-bottom: 10px;
-    text-align: justify;
-    text-indent: 2rem;
-    
-}
-
-.cont
-{
-    margin: 0 auto;
-    width: 400px;
-    margin-top: -60px;
-}
-.a
-{
-    background-color: var(--color-orange);
-    color: var(--color-white);
-    text-shadow: 1px 1px 1px var(--color-black);
-    padding: 0px 10px;
-    border-radius: 5px;
-    margin-top: 60%;
-    font-size: 1.5rem;
-}
-.cont li
-{
-    display: inline-block;
-}
-.b li
-{
-    display: inline-block;
-}
-.b1
-{
-    background-color: var(--color-orange);
-    color: var(--color-white);
-    text-shadow: 1px 1px 1px var(--color-black);
-    padding: 0px 10px;
-    font-size: 1.5rem;
-    border-radius: 5px;
-}
-.bs{
-  padding-top: 20px;
-  padding-left: 20px;
-}
-.port{
-  background-color: var(--color-orange);
-  padding:5px 10px;
-  border-radius: 8px;
-}
-.verMais{
-  padding-left: 20px;
-}
-.b8
-{
-    color: var(--color-white);
-    padding-left: 15px;
-    font-size: 1.5rem;
-}
-
-.b2
-{
-    color: var(--color-white);
-    padding-left: 20px;
-}
-section
+/**/
+/*-----------------------------------------------------------------------------------*/
+/*--------------------------------CORPO DA PAGÍNA------------------------------------*/
+.tdc
 {
   display: flex;
   flex-direction:space-between;
@@ -491,65 +262,92 @@ section
   margin-left: 15vw;
   margin-right: 15vw;
 }
-.esquerdo{
-  padding: 70px;
-}
-.aaa
+.tdc .esquerdo
 {
-    animation: animacao 1s linear infinite;
-    color: var(--color-white);
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 70px;
+  z-index: 1;
 }
-.imagem{
+.tdc .esquerdo .cont
+{
+  z-index: 1;
+}
+.tdc .esquerdo .cont li
+{
+  display: inline-block;
+}
+.tdc .esquerdo .cont .a
+{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  text-shadow: 1px 1px 1px var(--color-black);
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-top: 60%;
+  font-size: 1.5rem;
+}
+.tdc .esquerdo .cont .b8
+{
+  color: var(--color-white);
+  padding-left: 15px;
+  font-size: 1.5rem;
+}
+.tdc .esquerdo .cont .aaa
+{
+  animation: animacao 1s linear infinite;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tdc .esquerdo .cont h1
+{
+  font-size: 3rem;
+  color: var(--color-white);
+  float: right;
+}
+.tdc .esquerdo .cont h2
+{
+  font-size: 2rem;
+  color: var(--color-orange);
+  float: right;
+}
+.tdc .esquerdo .cont .descricao
+{
+  color: var(--color-white);
+  padding-top: 120px;
+  padding-bottom: 10px;
+  text-align: justify;
+  text-indent: 2rem;
+}
+.tdc .esquerdo .cont .bs .port
+{
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  padding:5px 10px;
+  border-radius: 8px;
+}
+.tdc .esquerdo .cont .bs .verMais
+{
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+.tdc .bgimg
+{
+  animation: bg linear 10s infinite;
+}
+.tdc .bgimg .imagem
+{
   background-image: url(../img/bg.png); 
   height: 90vh;
   width: 50vw;
   background-repeat: no-repeat;
   background-size: 70vh;
-  
-  
 }
 
-/*⬇botoes⬇*/
-.verMais
-{
-    text-decoration: none;
-    color: var(--color-white);
-}
 
-.port{
-    text-decoration: none;
-    color: var(--color-white);
-}
-
-/*-----------------⬆⬆--CONTEUDO DO CORPO--⬆⬆---------------*/
-/*
-/*
-/*
-/*-----------------⬇⬇--ELEMENTO UNICO CABECALHO--⬇⬇---------------*/
-.elemento1
-{
-  border-bottom: none;
-  color: var(--color-grenn);
-    
-}
-.nav-list li a{
-  
-}
-@media (max-width: 999px)
-{
-  .nav-list.active .elemento1
-      { 
-      border-bottom: none;
-      color: var(--color-grenn);
-      }
-}
-/*-----------------⬆⬆--ELEMENTO UNICO CABECALHO--⬆⬆---------------*/
-/*
-/*
-/*
-/*-----------------⬇⬇--RESPONSIVIDADE DO CORPO--⬇⬇---------------*/
+/*-----------------------------------------------------------------------------------*/
+/*---------------------RESPONSIVIDADE DA PAGINA PRINCIPAL----------------------------*/
 @media (max-width: 999px)
 {
     
@@ -601,7 +399,56 @@ section
     .imagem{
       display: none;
     }
+    .nav-list.active .elemento1
+    { 
+    border-bottom: none;
+    color: var(--color-grenn);
+    }
 
+
+  header
+  {
+  margin-left: 0vw;
+  margin-right: 0vw;
+  position: relative;
+  }
+  header img
+  {
+    width: 13vw;
+    height: 13vw;
+  }
+  
+  .nav-list
+  {
+    position: absolute;
+    display: flex;
+    top: 8vh;
+
+    right: 0;
+    width: 50vw;
+    height: 90vh;
+
+    background: var(--my-gradient);
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+
+    border-radius: 25px;
+    z-index: 1;
+    
+  }
+  
+  .mobile-menu
+  {
+    display: block;
+    width: 100px;
+    float: right;
+
+    margin-top: -25px;  
+  }
 }
 @media (max-width: 770px)
 {
@@ -679,6 +526,115 @@ section
       font-size: 1rem;
     }
 }
+@media (max-width: 375px)
+{
+  header{
+    height: 130px;
+  }
+  header img
+  {
+    width: 18vw;
+    height: 18vw;
+  }
+  .mobile-menu{
+    margin-top: -7px;
+  }
+  .nav-list {
+    position: absolute;
+    display: flex;
+    top: 15vh;
+    right: 0;
+    width: 55vw;
+    height: 85vh;
+    background: var(--my-gradient);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    border-radius: 25px;
+    
+  }
+ 
+  
+
+
+
+  header
+  {
+    height: 60vw;
+  }
+  header img
+  {
+    width: 18vw;
+    height: 18vw;
+  }
+  header{
+    height: 100px;
+  }
+  header img{
+    margin-top: 10px;
+  }
+
+
+
+  /*-----------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇---------------*/
+.checkbox
+{
+  opacity: 0;
+  position: absolute;
+  
+}
+.conteiner .label
+{
+  background-color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  position: relative;
+  height: 10px;
+  width: 40px;
+  transform: scale(1.5);
+}
+.label .ball
+{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.5px;
+  left: 2px;
+  height: 15px;
+  width: 15px;
+  transform: translate(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball
+{
+  transform: translateX(28px);
+}
+.fa-moon
+{
+  font-size: 0.8rem;
+  color: rgb(88, 88, 2);
+}
+.fa-sun
+{
+  font-size: 0.8rem;
+  color: rgb(255, 255, 0);
+}
+.conteiner{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 1;
+  
+}
+/*--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆---------------*/
+
+}
 @media (max-width: 360px)
 {
     section{
@@ -743,4 +699,4 @@ section
     }
     
 }
-/*-----------------⬆⬆--RESPONSIVIDADE DO CORPO--⬆⬆---------------*/
+/*-----------------------------------------------------------------------------------*/

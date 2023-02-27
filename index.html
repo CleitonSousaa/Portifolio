@@ -5,83 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/cores.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
 </head>
 <body class="corpo">
-    <!--------------⬇⬇--IMPLEMENTACAO DO MODO DARK--⬇⬇-------------->
-    <div class="conteiner">
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-sun"></i>
-            <div class="ball"></div>    
-        </label>
-    </div>
-    <!--------------⬆⬆--IMPLEMENTACAO DO MODO DARK--⬆⬆-------------->
-   
-    <header>
-            <img src="./assets/img/logo.png">
-            
-            
-            <!---->
-            <!---->
-            <!---->
-            <!--------------⬇⬇--MENU RESPONSIVO--⬇⬇-------------->
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+
+    <main class="background">
+            <div class="conteiner">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <div class="ball"></div>    
+                </label>
             </div>
-                
-            <ul class="nav-list">    
-                <li><a href="index.html" class="elemento1">ABOUT ME</a></li>
-                <li><a href="assets/html/projetos.html" class="elemento3">PROJECTS</a></li>
-                <li><a href="assets/html/contato.html" class="elemento4">CONTACT ME</a></li>
-            </ul>
-            <!--------------⬆⬆--MENU RESPONSIVO--⬆⬆-------------->
-            <!---->
-            <!---->
-            <!---->         
-    </header>
-    
-    <div class="slider">
-        <div class="slide">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-square-js"></i>
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-git"></i>
-            <i class="fa-brands fa-markdown"></i>
-            <i class="fa-brands fa-node"></i>
-            
-            
-            
-        </div>
-    </div>
-    <section>
+            <header class="cabecalho-principal">
+                <img src="./assets/img/logo.png">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">    
+                    <li><a href="index.html" class="elemento1">ABOUT ME</a></li>
+                    <li><a href="assets/html/projetos.html" class="elemento3">PROJECTS</a></li>
+                    <li><a href="assets/html/contato.html" class="elemento4">CONTACT ME</a></li>
+                </ul>        
+            </header>
+            <div class="slider">
+                <div class="slide">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-git"></i>
+                    <i class="fa-brands fa-markdown"></i>
+                    <i class="fa-brands fa-node"></i>
+                </div>
+            </div>
+    </main>
+
+    <section class="tdc">
         <main class="esquerdo">
             <ul class="cont">
-                <li class="a">Hello</li>
-                <li class="b8">I'm <a href="!" class="aaa">|</a></li>
-                <h1>Francisco Cleiton</h1>
-                <h2>Fullstack Developer</h2>
-                <p class="descricao">I'm a self-taught programmer on the rise, I've taken some free courses. Seeking more knowledge in documentation, books and projects already made by other programmers. I still don't have all the essential knowledge, but I always aim and fight for improvements both in my logic and in my projects. focusing on keeping a clean and organized code.</p>
-                <p class="bs"><a href="https://github.com/CleitonSousaa" class="port" target="_blank">Portfolio</a> <a href="./assets/html/projetos.html" class="verMais">View More...</a></p>
+                <li class="a">
+                    Hello
+                </li>
+                <li class="b8">
+                    I'm 
+                    <a href="!" class="aaa">
+                        |
+                    </a>
+                </li>
+                <h1>
+                    Francisco Cleiton
+                </h1>
+                <h2>
+                    Fullstack Developer
+                </h2>
+                <p class="descricao">
+                    I'm a self-taught programmer on the rise, I've taken some free courses. Seeking more knowledge in documentation, books and projects already made by other programmers. I still don't have all the essential knowledge, but I always aim and fight for improvements both in my logic and in my projects. focusing on keeping a clean and organized code.
+                </p>
+                <p class="bs">
+                    <a href="https://github.com/CleitonSousaa" class="port" target="_blank">Portfolio</a> 
+                    <a href="./assets/html/projetos.html" class="verMais">View More...</a>
+                </p>
             </ul>
         </main>  
-        
         <main class="bgimg">
             <div class="imagem"> </div>
         </main>
-    
     </section>
-    
-    
-             
+          
     <script src="/assets/js/index.js"></script>
 </body>
 </html>
