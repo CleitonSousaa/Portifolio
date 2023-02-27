@@ -153,18 +153,18 @@ body{
     margin-bottom: 50px;
 }
 .imagem1{
-    background-image: url(../img/ms.png);
+    background-image: url(/assets/img/ms.png);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 .imagem2{
-    background-image: url(../img/ms2.png);
+    background-image: url(/assets/img/ms2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .imagem3{
-    background-image: url(../img/ms2.png);
+    background-image: url(/assets/img/ms2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -50px;
