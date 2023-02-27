@@ -45,13 +45,10 @@
 }
 @keyframes menu {
   0%{
-    margin-left: 100%;
-  }
-  50%{
-    margin-left: -150%;
+    margin-left: -100%;
   }
   100%{
-    margin-left: 85%;
+    margin-left: 100%;
   }
 }
 /*-----------------⬆⬆--ANIMACOES--⬆⬆---------------*/
@@ -80,10 +77,10 @@
   transform: scale(1.5);
 }
 
-.slide{
+/*.slide{
   animation: menu 100s linear infinite;
   
-}
+}*/
 body{
   overflow: hidden;
 }
@@ -365,33 +362,43 @@ section
 }
 @media (max-width: 360px)
 {
-    
+    section{
+      padding: 0;
+      margin: 0;
+      margin-top: 90px;
+      margin-left: 50px;
+    }
     .a{
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     .b8{
       font-size: 1rem;
     }
     .aaa{
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     .cont h1{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .cont h2{
-
+      margin-top: -10px;
     }
     .cont .descricao{
-      font-size: 0.7rem;
-      
+      font-size: 0.8rem;
+      margin-top: -35px;
     }
     .port{
       font-size: 0.7rem;
+      margin-left: -60px;
+      margin-top: -20px;
       
     }
     .verMais{
       font-size: 0.8rem;
-      
+      margin-top: -20px;
+    }
+    .verMais:hover{
+      border-bottom: 2px solid var(--color-grenn);
     }
     .esquerdo{
       background-image: url(../img/bg1.png);
@@ -400,5 +407,21 @@ section
       background-position-x: -25vw;
       background-position-y: 10vh;
     }
+    .slider{
+      width: 100%;
+    }
+    .slide{
+      border: 1px solid white;
+      
+      
+    }
+    .slide i{
+      font-size: 3rem;
+      margin-left: 100px;
+    }
+    .fa-html5{
+      animation: menu 15s linear infinite;
+    }
+    
 }
 /*-----------------⬆⬆--RESPONSIVIDADE DO CORPO--⬆⬆---------------*/
