@@ -1,6 +1,6 @@
-/*LADO ESQUERDO*/
+
 body{
-    background-color: var(--colot-black);
+    background-color: var(--color-blackaut);
     background-image: url(../img/luz.jpg);
     background-repeat: no-repeat;
     background-size: 110vh;
@@ -46,6 +46,7 @@ section
 {
     margin-top: 40%;
     font-size: 3rem;
+    color: var(--color-white);
 }
 
 .contato-p1 a
@@ -54,7 +55,6 @@ section
     color: var(--color-orange);
     
 }
-
 .contato-p1 h2{
     padding-top: 50px;
     padding-left: 20px;
@@ -63,6 +63,7 @@ section
 }
 .contato-p1 h2 li{
     cursor: pointer;
+    list-style: none;
 }
 .contato-p1 h2 li:hover{
     border-bottom: 1px solid var(--colot-grenn);
@@ -70,11 +71,6 @@ section
 .contato-p1 h2 p:nth-child(1){
     margin-bottom: 10px;
 }
-
-
-
-/*LADO DIREITO*/
-
 .contato-p2 h1
 {
     margin-top: 40%;
@@ -120,6 +116,7 @@ form
     display: inline-block;
     margin-top: 20px;
     margin-left: 100px; 
+    
 }
 
 .actions
@@ -162,76 +159,31 @@ form
     color: var(--color-white);
 }
 
-@media (max-width: 999px)
-{
-    .nav-list.active .elemento4
-    { 
-    border-bottom: none;
-    color: var(--colot-grenn);
-    }
-    section{
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 10%;
-    }
-    .contato-p1 h1{
-        font-size: 2rem;
-        margin-top: 0;
-        margin-top: 50%;
-        margin-left: 20px;
-        
-       
-    }
-    .contato-p1 h2{
-        font-size: 1.4rem;
-        padding-right: 10px;
-        
-    }
-    .contato-p2 h1{
-        font-size: 2rem;
-        margin-top: 0;
-        margin-top: 33%;
-        
-        text-align: center;
-    }
-    .contato-p1{
-        
-        padding-left: 0;
-        
-    }
-    .contato-p2{
-        
-    }
-    .redes li a{
-       font-size: 2rem;
-    }
-    .redes li{
-        margin: 0;
-        margin-left: 10px;
-    }
-    .redes{
-        margin-left: 0;
-    }
-    .field textarea{
-        margin: 0 ;
-        padding: 0px 50px;
-    }
-    .actions input{
-        margin-left: -70px;
-        
-    }
 
-}
-
-@media screen and (max-width: 480px)
+/*-----------------------------------------------------------------------------------*/
+/*--------------------------RESPONSIVIDADE DE CONTATOS-------------------------------*/
+@media (max-width: 1728px)
 {
 
-    
 }
-
-@media screen and (max-width: 360px)
+@media (max-width: 1728px)
 {
 
-   
+}
+@media (max-width: 1280px)
+{
 
 }
+@media (max-width: 900px)
+{
+
+}
+@media (max-width: 428px)
+{
+
+}
+@media (max-width: 320px)
+{
+
+}
+/*-----------------------------------------------------------------------------------*/
