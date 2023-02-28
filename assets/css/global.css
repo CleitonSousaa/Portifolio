@@ -12,7 +12,7 @@
     --color-whiteo:#eed1d1;
     --color-grenn: #00fa9a;
     --color-header: #fffafa58;
-    --background-img:url(../img/star.jpg);
+    --background-img:url(/assets/img/star.jpg);
   
     --top-color: rgba(14, 29, 51, 0.8);
     --bottom-color: #1c1c1c;
@@ -25,7 +25,7 @@
 .dark:root{
   --color-white: #000000;
   --color-black: #ec0e0e;
-  --background-img:url(../img/dia2.jpg);
+  --background-img:url(/assets/img/dia2.jpg);
   --color-blackaut: #271f1f;
 }
 /*-----------------------------------------------------------------------------------*/
