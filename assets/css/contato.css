@@ -3,9 +3,10 @@ body{
     background-color: var(--color-blackaut);
     background-image: url(../img/luz.jpg);
     background-repeat: no-repeat;
-    background-size: 110vh;
+    background-size: 50vw;
     background-position-x: 100%;
     background-position-y: -200px;
+    
 }
 
 section
