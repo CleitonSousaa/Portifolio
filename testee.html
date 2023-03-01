@@ -8,48 +8,31 @@
     <style>
         body{
             background-color: burlywood;
+            height: 100vh;
             
         }
-        .conteiner{
-            width: 300px;
-            height: 300px;
-            overflow: hidden;
-            border: 1px solid white;
-            overflow: hidden;
+        
+        div:has([type="checkbox"]:checked){
+            color: brown;
+            background-color: aqua;
+            display: none;
         }
-        .conteiner .img{
-            position: relative;
-            width: 300px;
-            height: 300px;
-            border: 1px solid black;
-            background-image: url(./assets/img/ms.png);
-            background-repeat: no-repeat;
+        input{
+            position: absolute;
         }
-        .img2:checked
-        {
-            
-        }
+       
         
     </style>
 </head>
 <body>
     
-    <section class="conteiner">
-        <div class="img img1"></div>
-        <div class="img img1"></div>
-        <div class="img img1"></div>
-        <div class="img img1"></div>
+
         
-    </section>
-    <div class="chekebox">
-        <input type="checkbox" name="r1" id="1">
-        <input type="checkbox" name="r2" id="2">
-        <input type="checkbox" name="r3" id="3">
-        <input type="checkbox" name="r4" id="4">
+
+    <div for="">
+        <input type="checkbox">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, magnam vitae illum possimus itaque, nam accusantium beatae aut explicabo voluptate, ea soluta placeat provident praesentium asperiores eligendi cum impedit fuga?
     </div>
 
-    <script>
-
-    </script>
 </body>
 </html>
