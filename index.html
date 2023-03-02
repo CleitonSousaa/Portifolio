@@ -18,7 +18,6 @@
           <label class="label" for="chk">
               <i class="fa-solid fa-moon"></i>
               <i class="fa-solid fa-sun"></i>
-              <p>DarkMode</p>
               <div class="ball"></div>    
           </label>
       </div>
@@ -26,29 +25,45 @@
         <img src="./projeto antigo/assets/img/logo.png" width="100px">       
       </div>
       </main>
+      
       <nav class="menu">
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
-      </div>
+        </div>
+        
         <ul class="nav-list">
           <li><a href="#sobre">ABOUT ME</a></li>
           <li><a href="#projetos">PROJECTS</a></li>
           <li><a href="#contato">CONTACT ME</a></li>
+          
         </ul>
       </nav>
     </header>
 
 
     <div class="content">
+
       <section id="sobre" class="sobre">
+
         <main class="conteudo">
           <div class="texto">
-
+            <p><a href="#"> Hello</a><a href="#"> I'm</a><a href="#"> |</a></p>
+            <p>Francisco Cleiton</p>
+            <p>Fullstack Developer</p>
+            <p>I'm a self-taught programmer on the rise, I've taken some free courses. Seeking more knowledge in documentation, books and projects already made by other programmers. I still don't have all the essential knowledge, but I always aim and fight for improvements both in my logic and in my projects. focusing on keeping a clean and organized code.</p>
+            <p class="bs">
+              <a href="https://github.com/CleitonSousaa" class="port" target="_blank">Portfolio</a> 
+              <a href="#"  class="verMais">View More...</a>
+            </p>
           </div>
+          
+
           <div class="imagem">
+            <p></p>
             
+            </p>
           </div>
 
         </main>
@@ -58,7 +73,52 @@
         
       </section>
       
-      <section id="contato" class="projetos"></section>
+      <section id="contato" class="contato">
+        <div class="contato-p1">
+            
+          <h1>Contact <a href="#"> Me!</a></h1>
+          <h2>
+              <li><i class="fa-brands fa-whatsapp"></i>  (89)981217570</li>
+              <li><i class="fa-regular fa-envelope"></i>  Fccleitonfs.329@gmail.com</li>
+          </h2>
+          
+          <ul class="redes">
+              <li><a href="#" class="fa-brands fa-twitter"><span class="label"></span></a></li>
+      <li><a href="https://www.linkedin.com/in/cleiton-sousaa" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
+      <li><a href="https://www.instagram.com/cleiton_sa._/" class="fa-brands fa-instagram"><span class="label"></span></a></li>
+      <li><a href="https://github.com/CleitonSousaa"  class="fa-brands fa-github"><span class="label"></span></a></li>            
+          </ul>
+      </div>
+      <!---->
+
+      <!--FORMULARIO DE CONTATO DIRETO-->
+      <div class="contato-p2">
+          <h1>Direct Contact By Email</h1>
+          <form method="post" action="https://api.staticforms.xyz/submit">
+              <input type="hidden" name="accessKey" value="1640bb20-6031-4178-8e64-143ab05c2297">
+              <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/html/contato.html">
+              <div class="fields">
+                  <div class="fieldHalf">
+                      
+                      <input type="text" name="name" id="name" placeholder="Your Name"/>
+                  </div>
+                  <div class="fieldHalf">
+                      <input type="text" name="email" id="email" placeholder="Your Email Address"/>
+                  </div>
+                  <div class="fieldHalf">
+                      <input type="text" name="Number" id="Number" placeholder="Your Mobile Number"/>
+                  </div>
+                  <div class="field">
+                      <textarea name="message" id="message" rows="4" placeholder="How Can I Help You"></textarea>
+                  </div>
+              </div>
+              <ul class="actions">
+                  <li><input type="submit" value="Send Message" class="primary" /></li>
+                  <li><input type="reset" value="Reset" /></li>
+              </ul>
+          </form>
+      </div>
+      </section>
 
     </div>
     <script src="index.js"></script>
