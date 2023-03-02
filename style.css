@@ -33,7 +33,36 @@
 }
 /*------------------------------------------------------------------------*/
 /*---------------------------ANIMAÇÃO-------------------------------------*/
+@keyframes animacao
+{
+  0%{
+      opacity: 1;
+  }
 
+  50%{
+      opacity: 0;
+  }
+  
+  100%{
+      opacity: 1;
+  }
+
+}
+@keyframes bg
+{
+  0%{
+      opacity: 0.1;
+  }
+  
+  50%{
+      opacity: 1;
+  }
+  
+  100%{
+      opacity: 0.1;
+  }
+
+}
 /*------------------------------------------------------------------------*/
 /*-----------------------CONFIGURAÇÃO GERAL-------------------------------*/
 *
@@ -50,6 +79,10 @@ body
   font-family: "Roboto", sans-serif;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 
 html
@@ -115,25 +148,33 @@ html
   margin-left: 20px;
 }
 /*--------------------*/
-.content
-{
-  width: 100vw;
-  padding-right: 5rem;
-  padding-left: 5rem;
+.imagembg{
+  width: 100%;
+  height: 100%;
+  background-image: url(/projeto_antigo/assets/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 30vw;
+  background-position-y: 150px;
+  
+  animation: bg linear 5s infinite;
+  margin-top: 10vw;
+
 }
+
 header
 {
   position: fixed;
   top: 0;
-  height: 8vh;
+  height: 10vh;
   background-color: #1180ee;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1vh;
   margin-bottom: 1vh;
+  z-index: 1;
+  
 }
 header main{
   display: flex;
@@ -158,25 +199,47 @@ header .menu li{
 header .menu li a{
   
 }
-
-#sobre
+.content
 {
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bgs #sobre
+{
+  width: 80%;
   height: 100vh;
-  border: 1px solid black;
+  margin: 0 auto;
+  overflow: hidden;
+  
+  
+  
+}
+.bgs{
+  background-image: url(/projeto_antigo/assets/img/star.jpg);
+  background-size: cover;
+  border-radius: 70% 10% 70% 10%;
 }
 #projetos
 {
   background-color: var(--color-white);
   width: 100%;
   height: 100vh;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  margin-right: 10vw;
+  margin-left: 10vw;
+  
 }
 #contato
 {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
   height: 100vh;
-  border: 1px solid black;
+  
+  
 }
 
 
@@ -233,14 +296,91 @@ nav {
   margin-left: 20px;
   margin-right: 20px;
 }
-.imagem{
-  background-image: url(./projeto-antigo);
+
+.texto .hello
+{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  text-shadow: 1px 1px 1px var(--color-black);
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-left: -210px;
+  font-size: 1.5rem;
+}
+.texto .im
+{
+  color: var(--color-white);
+  padding-left: 15px;
+  font-size: 1.5rem;
+}
+.texto .l
+{
+  animation: animacao 1s linear infinite;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.texto .name
+{
+  font-size: 3rem;
+  color: var(--color-white);
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.texto .info
+{
+  font-size: 2rem;
+  color: var(--color-orange);
+  margin-left: 130px;
+  margin-top: 10px;
+}
+.texto .descricao
+{
+  color: var(--color-white);
+  padding-top: 50px;
+  text-align: justify;
+  text-indent: 2rem;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 60%;
+}
+.texto{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.bs .port
+{
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  padding:5px 10px;
+  border-radius: 8px;
+  margin-left: -210px;
+}
+.bs .verMais
+{
+  margin-left: 10px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+.bs .verMais:hover
+{
+  color: var(--color-orange);
+  border-bottom: 1px solid var(--color-grenn);
 }
 
 /*------------------------------------------------------------------------*/
 /*-------------------------RESPONSIVIDADE---------------------------------*/
 @media (max-width: 952px)
 {
+  header{
+    overflow:visible;
+  }
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -342,16 +482,11 @@ html
 
 
 /*contato*/
-.contato
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
- 
-}
+
 .redes
 {
-    margin-top: 23%;
-    margin-left: -40px;
+    margin-top: 0%;
+    margin-left: 0px;
 }
 
 .redes li
@@ -369,7 +504,7 @@ html
 
 .contato-p1 h1
 {
-    margin-top: 40%;
+    margin-top: 0%;
     font-size: 3rem;
     color: var(--color-white);
 }
@@ -381,7 +516,7 @@ html
     
 }
 .contato-p1 h2{
-    padding-top: 50px;
+    padding-top: 0px;
     padding-left: 20px;
     color: var(--color-white);
     
@@ -393,14 +528,12 @@ html
 .contato-p1 h2 li:hover{
     border-bottom: 1px solid var(--colot-grenn);
 }
-.contato-p1 h2 p:nth-child(1){
-    margin-bottom: 10px;
-}
+
 .contato-p2 h1
 {
-    margin-top: 40%;
     font-size: 3rem;
     color: var(--color-white);
+    text-shadow: 1px 1px 1px white;
 }
 
 form
@@ -482,5 +615,26 @@ form
 .field textarea::-webkit-input-placeholder
 {
     color: var(--color-white);
+}
+.contato-p1
+{
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.contato-p2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/projeto_antigo/assets/img/luz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -2px 5px 10px #241e20;
+  border-radius: 20% 0  20% 0;
 }
 /*contato*/

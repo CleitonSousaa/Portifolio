@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/projeto antigo/assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="/projeto_antigo/assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
   </head>
   <body>
     
@@ -22,7 +22,7 @@
           </label>
       </div>
       <div>
-        <img src="./projeto antigo/assets/img/logo.png" width="100px">       
+        <img src="./projeto_antigo/assets/img/logo.png" width="80px">       
       </div>
       </main>
       
@@ -41,18 +41,19 @@
         </ul>
       </nav>
     </header>
+    
 
 
     <div class="content">
-
+      <main class="bgs">
       <section id="sobre" class="sobre">
 
         <main class="conteudo">
           <div class="texto">
-            <p><a href="#"> Hello</a><a href="#"> I'm</a><a href="#"> |</a></p>
-            <p>Francisco Cleiton</p>
-            <p>Fullstack Developer</p>
-            <p>I'm a self-taught programmer on the rise, I've taken some free courses. Seeking more knowledge in documentation, books and projects already made by other programmers. I still don't have all the essential knowledge, but I always aim and fight for improvements both in my logic and in my projects. focusing on keeping a clean and organized code.</p>
+            <p><a href="#" class="hello"> Hello</a><a href="#" class="im"> I'm</a><a href="#" class="l"> |</a></p>
+            <p class="name">Francisco Cleiton</p>
+            <p class="info">Fullstack Developer</p>
+            <p class="descricao">I'm a self-taught programmer on the rise, I've taken some free courses. Seeking more knowledge in documentation, books and projects already made by other programmers. I still don't have all the essential knowledge, but I always aim and fight for improvements both in my logic and in my projects. focusing on keeping a clean and organized code.</p>
             <p class="bs">
               <a href="https://github.com/CleitonSousaa" class="port" target="_blank">Portfolio</a> 
               <a href="#"  class="verMais">View More...</a>
@@ -60,18 +61,19 @@
           </div>
           
 
-          <div class="imagem">
+          <div class="imagembg">
             <p></p>
-            
+      </main>      
             </p>
           </div>
 
         </main>
       </section>
-
+      <!---------------------------------------------------------------------------------------->
       <section id="projetos" class="projetos">
         
       </section>
+      <!---------------------------------------------------------------------------------------->
       
       <section id="contato" class="contato">
         <div class="contato-p1">
@@ -83,16 +85,24 @@
           </h2>
           
           <ul class="redes">
-              <li><a href="#" class="fa-brands fa-twitter"><span class="label"></span></a></li>
-      <li><a href="https://www.linkedin.com/in/cleiton-sousaa" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
-      <li><a href="https://www.instagram.com/cleiton_sa._/" class="fa-brands fa-instagram"><span class="label"></span></a></li>
-      <li><a href="https://github.com/CleitonSousaa"  class="fa-brands fa-github"><span class="label"></span></a></li>            
+              <li>
+                <a href="#" class="fa-brands fa-twitter"><span class="label"></span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/cleiton-sousaa" target="_blank" class="fa-brands fa-linkedin"><span class="label"></span></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/cleiton_sa._/" target="_blank" class="fa-brands fa-instagram"><span class="label"></span></a>
+              </li>
+              <li>
+                <a href="https://github.com/CleitonSousaa" target="_blank"  class="fa-brands fa-github"><span class="label"></span></a>
+              </li>            
           </ul>
-      </div>
-      <!---->
+        </div>
+      
 
-      <!--FORMULARIO DE CONTATO DIRETO-->
-      <div class="contato-p2">
+        <!--FORMULARIO DE CONTATO DIRETO-->
+        <div class="contato-p2">
           <h1>Direct Contact By Email</h1>
           <form method="post" action="https://api.staticforms.xyz/submit">
               <input type="hidden" name="accessKey" value="1640bb20-6031-4178-8e64-143ab05c2297">
@@ -117,7 +127,7 @@
                   <li><input type="reset" value="Reset" /></li>
               </ul>
           </form>
-      </div>
+        </div>
       </section>
 
     </div>
