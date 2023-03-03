@@ -15,27 +15,4 @@ let count = 1;
 
 
 
-        const carroucel = document.querySelector(".slides");
-
-        let isDragStart = false, prevPageX, prevScrollLeft;
-
-        const dragStart = (e) => {
-            isDragStart = true;
-            prevPageX = e.pageX;
-            prevScrollLeft = carroucel.prevScrollLeft;
-        }
-
-        const dragging = (e) => {
-            if(!isDragStart) return;
-            e.preventDefault();
-            let positionDiff = e.pageX - prevPageX;
-            carroucel.scrollLeft = prevScrollLeft - positionDiff;
-        }
-
-        const dragStop = () => {
-            let isDragStart = false;
-        }
         
-        carroucel.addEventListener('mousedown', dragStart);
-        carroucel.addEventListener('mousemove', dragging);
-        carroucel.addEventListener('mouseup', dragStop);
