@@ -400,18 +400,19 @@ html
 {
     width: 100vw;
 }
-.btn_left, .btn_rigth
+.btn_left i, .btn_rigth i
 {
-    z-index: 1;
-    
-    border-radius: 100px;
+    z-index: 1; 
     font-size: 5rem;
     border: none;
+    color: white;
+    text-shadow: 1px 2px 3px rgb(193, 15, 15);
     
 }
 .btn_left
 {
    margin-left: 20px ;
+   
     
 }
 .btn_rigth
@@ -502,16 +503,20 @@ html
     flex-direction: row;
     gap: 50px;
     margin-top: 50px;
+    
 }
 .btn_000 a:nth-child(1){
     color: aliceblue;
     border: 1px solid black;
     padding: 10px 50px;
+    position: absolute;
+    margin-left: -150px;
     
 }
 .btn_000 a:nth-child(2){
     color: aliceblue;
     padding-top: 10px;
+    position: absolute;
 }
 .btn_000 a:nth-child(2):hover{
     color: rgb(24, 111, 186);
