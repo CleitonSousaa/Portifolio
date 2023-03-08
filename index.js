@@ -106,3 +106,65 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+
+
+/*projetos */
+const btn_left = document.querySelector('.btn_left')
+const btn_rigth = document.querySelector('.btn_rigth')
+const corpo = document.querySelector('.corpo')
+
+
+
+    
+
+    var cont = 1
+    console.log(cont)
+
+    btn_left.addEventListener('click', () => {
+        
+        if(cont >= 2){
+            cont = cont - 1
+            console.log(cont)
+        }
+
+        //o que acontece se estiver na posicao
+        if(cont == 1){
+            
+            corpo.style.marginLeft= '0vw'
+            
+        }
+        if(cont == 2){
+            
+            corpo.style.marginLeft= '-100%'
+            
+        }
+        if(cont == 3){
+            
+            corpo.style.marginLeft= '-200%'
+        }
+        
+    });
+    
+
+    btn_rigth.addEventListener('click', () => {
+        if(cont <= 3){
+            cont = cont + 1
+            console.log(cont)
+        }
+
+        //o que acontece se estiver na posicao 
+        if(cont == 2){
+            
+            corpo.style.marginLeft= '-100%'  
+        }
+        if(cont == 3){
+            
+            corpo.style.marginLeft= '-200%'
+        }
+        if(cont == 4){
+            
+            corpo.style.marginLeft= '-300%'
+        }
+    });
+/* */
