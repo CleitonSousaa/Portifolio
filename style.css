@@ -1402,6 +1402,12 @@ header
 {
   display: none;
 }
+#sobre{
+  background-image: url(./image/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: bg linear 5s infinite;
+}
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------PROJECTS----------------------------------------*/
 .carousel img
