@@ -485,8 +485,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    
     overflow: hidden;
 }
 .container_p1{
@@ -495,11 +494,13 @@ body
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 .container_p1_content{
-  width: 20rem;
-  height: 30rem;
+  width: 15vw;
+  height: 28vw;
   padding-top: 120%;
+  overflow: hidden;
 }
 .container_p1_content h2{
   width: 100%;
@@ -512,8 +513,8 @@ text-align: center;
 }
 .container_p1 .box{
   position: relative;
-  width: 20rem;
-  height: 30rem;
+  width: 15vw;
+  height: 28vw;
   margin: 3rem;
 
 }
@@ -521,7 +522,7 @@ text-align: center;
   transform: translate(-1.5rem, -1.5rem);
 }
 .container_p1 .box:hover .container_p1_content{
-  transform: translate(3rem, 5rem);
+  transform: translate(6rem, 5rem);
   background-color: #fff;
   
 }
@@ -535,8 +536,8 @@ text-align: center;
   transition: all 0.5 ease-in-out;
 }
 .img_box img{
-  width: 20rem;
-  height: 30rem;
+  width: 15vw;
+  height: 28vw;
   object-fit: cover;
   resize: both;
 }
@@ -548,8 +549,8 @@ text-align: center;
   flex-wrap: wrap;
 }
 .container_p2_content{
-  width: 20rem;
-  height: 30rem;
+  width: 15vw;
+  height: 28vw;
   padding-top: 120%;
   overflow: hidden;
 }
@@ -564,8 +565,8 @@ text-align: center;
 }
 .container_p2 .box2{
   position: relative;
-  width: 20rem;
-  height: 30rem;
+  width: 15vw;
+  height: 28vw;
   margin: 3rem;
 
 }
@@ -573,7 +574,7 @@ text-align: center;
   transform: translate(-1.5rem, -1.5rem);
 }
 .container_p2 .box2:hover .container_p2_content{
-  transform: translate(3rem, 5rem);
+  transform: translate(6rem, 5rem);
   background-color: #fff;
   
 }
@@ -587,8 +588,8 @@ text-align: center;
   transition: all 0.5 ease-in-out;
 }
 .img_box2 img{
-  width: 20rem;
-  height: 30rem;
+  width: 15vw;
+  height: 28vw;
   object-fit: cover;
   resize: both;
 }
@@ -596,7 +597,8 @@ text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 
@@ -1056,24 +1058,7 @@ form
     padding-right: 100px;
     overflow: hidden;
 }
-.projeto01 p{
-  margin-top: -100px;
-  padding-bottom: 50px;
-  font-size: 2rem;
-}
-.projeto01 h1{
-  font-size: 3.5rem;
-  margin-top: 0px;
-  padding-bottom: 20px;
-}
-.projeto02
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    overflow: hidden; 
-}
+
 .contexto{
   display: flex;
   flex-direction: column;
