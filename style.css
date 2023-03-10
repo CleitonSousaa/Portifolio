@@ -129,11 +129,9 @@ header
     --bottom-color:  rgba(14, 29, 51, 0.826);
     --my-gradient: linear-gradient(
       var(--top-color),
-      var(--bottom-color)
-      
+      var(--bottom-color) 
     );
-    --background-gradient: ;
-    
+    --background-gradient: ;    
 }
 .dark:root{
   --top-color: rgba(206, 12, 12, 0.8);
@@ -219,7 +217,6 @@ body
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
 }
 .conteudo
 {
