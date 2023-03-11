@@ -386,9 +386,7 @@ body
   object-fit:contain;
   
 }
-.carousel img:hover{
-  transform: scale(1.8);
-}
+
 .carousel img:first-child
 {
   margin-left: 0px;
@@ -485,121 +483,9 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     overflow: hidden;
 }
-.container_p1{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  
-}
-.container_p1_content{
-  width: 15vw;
-  height: 28vw;
-  padding-top: 120%;
-  overflow: hidden;
-}
-.container_p1_content h2{
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-}
-.container_p1_content h2 span{
-color: red;
-text-align: center;
-}
-.container_p1 .box{
-  position: relative;
-  width: 15vw;
-  height: 28vw;
-  margin: 3rem;
 
-}
-.container_p1 .box:hover .img_box{
-  transform: translate(-1.5rem, -1.5rem);
-}
-.container_p1 .box:hover .container_p1_content{
-  transform: translate(6rem, 5rem);
-  background-color: #fff;
-  
-}
-.img_box{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: all 0.5 ease-in-out;
-}
-.img_box img{
-  width: 15vw;
-  height: 28vw;
-  object-fit: cover;
-  resize: both;
-}
-.container_p2{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.container_p2_content{
-  width: 15vw;
-  height: 28vw;
-  padding-top: 120%;
-  overflow: hidden;
-}
-.container_p2_content h2{
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-}
-.container_p2_content h2 span{
-color: red;
-text-align: center;
-}
-.container_p2 .box2{
-  position: relative;
-  width: 15vw;
-  height: 28vw;
-  margin: 3rem;
-
-}
-.container_p2 .box2:hover .img_box2{
-  transform: translate(-1.5rem, -1.5rem);
-}
-.container_p2 .box2:hover .container_p2_content{
-  transform: translate(6rem, 5rem);
-  background-color: #fff;
-  
-}
-.img_box2{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: all 0.5 ease-in-out;
-}
-.img_box2 img{
-  width: 15vw;
-  height: 28vw;
-  object-fit: cover;
-  resize: both;
-}
-.projeto_001{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 100px;
-}
 
 
 .projeto02
