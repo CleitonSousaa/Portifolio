@@ -7,7 +7,7 @@ header
   position: fixed;
   top: 0;
   height: 10vh;
-  background-color: var(--bg-header);
+  background-color: #00000029;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -94,6 +94,8 @@ header
   margin-left: 32px;
   color: var(--color-texto);
 }
+
+
 .nav-list li a:hover
 {
   color: var(--color-fundo);
@@ -118,7 +120,7 @@ header
 /*CORES*/
 :root
 {
-    --bg-gradient: radial-gradient(circle, rgb(33, 152, 154) 10%, rgba(4, 31, 44, 0.911) 100%);
+    --bg-gradient: linear-gradient( rgb(33, 152, 154) , rgba(4, 31, 44, 0.911) );
     --color-texto: #fffafa;
     --color-sombra: #000000;
     --color-fundo: #ff4400;
@@ -126,8 +128,8 @@ header
     --bg-header:#000000;
     --color-sublimacao: #00fa9a;
     --color-header: #fffafa58;
-    --top-color: rgba(2, 18, 44, 0.839);
-    --bottom-color:  rgba(19, 27, 51, 0.607);
+    --top-color: rgb(2, 18, 44);
+    --bottom-color:  rgb(19, 27, 51);
     --my-gradient: linear-gradient(
       var(--top-color),
       var(--bottom-color) 
@@ -135,7 +137,7 @@ header
        
 }
 .dark:root{
-  --bg-gradient: radial-gradient(circle, #9e9da5 0%, #94bbe9 100%);
+  --bg-gradient: linear-gradient( #9e9da5 , #94bbe9 );
   --top-color: rgba(206, 12, 12, 0.8);
   --bottom-color: #c1acac;
   --color-background: #029eec48;
@@ -206,8 +208,58 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  
 }
+.fatos{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fatos01{
+  background-image: linear-gradient(#1c1c1c, rgb(14, 29, 51));
+  
+}
+.fatos01 div{
+  width: 35%;
+  height: 80%;
+  border: 4px double rgba(0, 0, 0, 0.483);
+  background-color: rgba(211, 206, 206, 0.034);
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.fatos01 div:last-child{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.fatos02{
+  background-image: linear-gradient( rgb(14, 29, 51),  rgb(28, 65, 121) , rgb(33, 152, 154) );
+}
+.fatos02 div{
+  width: 35%;
+  height: 80%;
+  border: 4px double rgba(0, 0, 0, 0.483);
+  background-color: rgba(211, 206, 206, 0.034);
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.fatos02 div:first-child{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------ABOUT ME----------------------------------------*/
 #sobre
@@ -219,6 +271,7 @@ body
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 .conteudo
 {
@@ -402,7 +455,7 @@ body
 /**/
 #projetos
 {
-  background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
+  background: linear-gradient( rgb(14, 29, 51), rgb(14, 29, 51));
   width: 100%;
   height: 100vh;
   margin-right: 10vw;

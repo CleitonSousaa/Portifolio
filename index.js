@@ -242,3 +242,6 @@ carousel.addEventListener('touchmove', dragging);
 carousel.addEventListener('mouseup', dragStop);
 carousel.addEventListener('mouseleave', dragStop);
 carousel.addEventListener('touchend', dragStop);
+
+
+
