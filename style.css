@@ -83,20 +83,29 @@ header
 .nav-list
 {
   display: flex;
+  justify-content: space-between;
+  width: 400px;
+  
 }
-.nav-list li
-{
-  margin-left: 32px;
-}
+
 .nav-list a
 {
   letter-spacing: 3px;
-  margin-left: 32px;
+
   color: var(--color-texto);
+}
+.nav-list .sobree.ativo{
+  color: red;
+}
+.nav-list .projetoss.ativo{
+  color: red;
+}
+.nav-list .contatoo.ativo{
+  color: red;
 }
 
 
-.nav-list li a:hover
+.nav-list a:hover
 {
   color: var(--color-fundo);
   padding-bottom: 2px;

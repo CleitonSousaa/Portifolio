@@ -245,3 +245,67 @@ carousel.addEventListener('touchend', dragStop);
 
 
 
+
+
+
+
+
+
+
+
+
+
+const sobre = document.querySelector('.sobree');
+const projetos = document.querySelector('.projetoss');
+const contatos = document.querySelector('.contatoo');
+
+
+const sobreMim = document.querySelector(".sobre_mim");
+const projejos = document.querySelector(".projetos_");
+const contato = document.querySelector(".contato_");
+
+const position_sobre = sobreMim.getBoundingClientRect();
+const position_projetos = projetos.getBoundingClientRect();
+const position_contato = contato.getBoundingClientRect();
+
+
+
+window.addEventListener('scroll', function() {
+  const scrollTop = window.scrollY;
+  if(scrollTop === 0 && scrollTop < position_projetos.top)
+  {
+    sobre.style.color='tomato'
+    projetos.style.color='white'
+    contatos.style.color='white'
+
+  }
+  if(scrollTop > position_projetos.top && scrollTop < position_contato.top){
+    sobre.style.color='white'
+    projetos.style.color='tomato'
+    contatos.style.color='white'
+  }
+  if(scrollTop > position_contato.top){
+    sobre.style.color='white'
+    projetos.style.color='white'
+    contatos.style.color='tomato'
+  }
+});
+
+
+// seleciona o elemento que você deseja obter a posição
+
+
+
+// obtém a posição do elemento
+
+
+// exibe as coordenadas do elemento
+console.log(4 - position_sobre.top);
+console.log(400 + position_projetos.top);
+console.log(400 + position_contato.top);
+
+
+
+
+
+
