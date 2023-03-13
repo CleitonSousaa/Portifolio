@@ -1061,22 +1061,8 @@ form
   gap: 20px;
   margin-bottom: 200px;
 }
-.projeto03
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.projeto04
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
+¿
+¿
 .conteiner_img{
     display: flex;
     flex-direction: row;
@@ -1705,14 +1691,7 @@ header
   margin-top: 0px;
   padding-bottom: 20px;
 }
-.projeto02
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    overflow: hidden; 
-}
+
 .contexto{
   display: flex;
   flex-direction: column;
