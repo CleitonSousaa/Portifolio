@@ -112,7 +112,7 @@ const corpo = document.querySelector('.corpo')
     
 
     var cont = 1
-    console.log(cont)
+    
 
     btn_left.addEventListener('click', () => {
         
@@ -272,7 +272,7 @@ const position_contato = contato.getBoundingClientRect();
 
 window.addEventListener('scroll', function() {
   const scrollTop = window.scrollY;
-  if(scrollTop === 0 && scrollTop < position_projetos.top)
+  if(scrollTop < position_projetos.top)
   {
     sobre.style.color='tomato'
     projetos.style.color='white'
@@ -284,26 +284,12 @@ window.addEventListener('scroll', function() {
     projetos.style.color='tomato'
     contatos.style.color='white'
   }
-  if(scrollTop > position_contato.top){
+  if(scrollTop > position_contato.top - 50 ){
     sobre.style.color='white'
     projetos.style.color='white'
     contatos.style.color='tomato'
   }
 });
-
-
-// seleciona o elemento que você deseja obter a posição
-
-
-
-// obtém a posição do elemento
-
-
-// exibe as coordenadas do elemento
-console.log(4 - position_sobre.top);
-console.log(400 + position_projetos.top);
-console.log(400 + position_contato.top);
-
 
 
 

@@ -1,13 +1,101 @@
 @import url('fontawesome-free-6.2.1-web/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400&display=swap');
+/*-----------------------------------CORES E ANIMAÇÕES----------------------------------*/
+/*CORES*/
+:root
+{
+    /*Backgrounds*/
+    --color-backgroundGeral: #1c1c1c;
+
+    --my-gradientSobre: linear-gradient(#392212, #926238);
+    --div1-gradient: linear-gradient(#926238, #02023b);
+    --my-gradientProjetos: linear-gradient(#02023b, #151414);
+    --div2-gradient: linear-gradient(#151414 ,#1e3232 );
+    --my-gradientContato: linear-gradient( #1e3232 , #21653f); 
+
+    --bg-header: linear-gradient(#1C1C1C, #696969);
+
+    --color-texto: #fffafa;
+    --color-sombra: #000000;
+    --color-fundo: #ff4400;
+    --color-sublimacao: #00fa9a;
+    
+    
+       
+}
+.dark:root{
+   /*Backgrounds*/
+   --color-backgroundGeral: #029eec;
+   
+   --my-gradientSobre: linear-gradient(#d99f53, #F5DEB3);
+   --div1-gradient: linear-gradient(#F5DEB3, #4682B4);
+   --my-gradientProjetos: linear-gradient(#4682B4, #B0C4DE );
+   --div2-gradient: linear-gradient(#B0C4DE, #5F9EA0);
+   --my-gradientContato: linear-gradient(#5F9EA0 , #B0E0E6 ); 
+
+   --bg-header: linear-gradient(#696969, #1C1C1C);
+
+  --color-white: #000000;
+  --color-black: #b0abab;
+  --color-texto: #000000;
+  --color-sombra: #fffafa;
+  
+}
+/*ANIMAÇÕES*/
+@keyframes animacao
+{
+  0%{
+      opacity: 0.5;
+  }
+
+  50%{
+      opacity: 0;
+  }
+  
+  100%{
+      opacity: 0.5;
+  }
+
+}
+@keyframes bg
+{
+  0%{
+      opacity: 0.6;
+  }
+  
+  50%{
+      opacity: 0.9;
+  }
+  
+  100%{
+      opacity: 0.6;
+  }
+
+}
+@keyframes rotacao
+{
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform : rotate(90deg);
+    }
+    50%{
+        transform : rotate(170deg);
+    }
+    100%{
+        transform : rotate(360deg);
+    }
+}
+/*--------------------------------------------------------------------------------------*/
 /*----------------------------------------HEADER----------------------------------------*/
 header
 {
   position: fixed;
   top: 0;
   height: 10vh;
-  background-color: #00000029;
+  background: var(--bg-header);
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -54,8 +142,8 @@ header
 }
 .label .ball
 {
-  background-color: var(--color-background);
-  opacity: 0.7;
+  background-color: #000;
+  
   border-radius: 50%;
   position: absolute;
   top: -1px;
@@ -91,7 +179,7 @@ header
 .nav-list a
 {
   letter-spacing: 3px;
-
+  text-shadow: 1px 1px 1px black;
   color: var(--color-texto);
 }
 .nav-list .sobree.ativo{
@@ -125,69 +213,7 @@ header
   transition: 0.3s;
 }
 /*--------------------------------------------------------------------------------------*/
-/*-----------------------------------CORES E ANIMAÇÕES----------------------------------*/
-/*CORES*/
-:root
-{
-    --bg-gradient: linear-gradient( rgb(33, 152, 154) , rgba(4, 31, 44, 0.911) );
-    --color-texto: #fffafa;
-    --color-sombra: #000000;
-    --color-fundo: #ff4400;
-    --color-background: #1c1c1c;
-    --bg-header:#000000;
-    --color-sublimacao: #00fa9a;
-    --color-header: #fffafa58;
-    --top-color: rgb(2, 18, 44);
-    --bottom-color:  rgb(19, 27, 51);
-    --my-gradient: linear-gradient(
-      var(--top-color),
-      var(--bottom-color) 
-    );
-       
-}
-.dark:root{
-  --bg-gradient: linear-gradient( #9e9da5 , #94bbe9 );
-  --top-color: rgba(206, 12, 12, 0.8);
-  --bottom-color: #c1acac;
-  --color-background: #029eec48;
-  --color-white: #000000;
-  --color-black: #b0abab;
-  --color-texto: #000000;
-  --color-sombra: #fffafa;
-  --bg-header:#ffffff;
-}
-/*ANIMAÇÕES*/
-@keyframes animacao
-{
-  0%{
-      opacity: 0.5;
-  }
 
-  50%{
-      opacity: 0;
-  }
-  
-  100%{
-      opacity: 0.5;
-  }
-
-}
-@keyframes bg
-{
-  0%{
-      opacity: 0.6;
-  }
-  
-  50%{
-      opacity: 0.9;
-  }
-  
-  100%{
-      opacity: 0.6;
-  }
-
-}
-/*--------------------------------------------------------------------------------------*/
 /*----------------------------------CONFIGURAÇÃO PADRÃO---------------------------------*/
 *
 {
@@ -204,7 +230,7 @@ body
   display: grid;
   place-items: center;
   overflow-x: hidden;
-  background-color: var(--color-background);
+  background-color: var(--color-backgroundGeral);
 }
 ::-webkit-scrollbar
 {
@@ -229,7 +255,7 @@ body
 }
 
 .fatos01{
-  background-image: linear-gradient(#1c1c1c, rgb(14, 29, 51));
+  background: var(--div1-gradient);
   
 }
 .fatos01 div{
@@ -240,6 +266,19 @@ body
   border-radius: 15px;
   padding: 0px 10px;
 }
+.fatos01 div:first-child{
+  background-image: url(./image/star.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+.terra{
+  border-radius: 100%;
+  animation: rotacao 40s linear infinite;
+  box-shadow: 1px -1px 5px rgb(12, 235, 224);
+}
+
 .fatos01 div:last-child{
   color: white;
   display: flex;
@@ -250,7 +289,7 @@ body
 }
 
 .fatos02{
-  background-image: linear-gradient( rgb(14, 29, 51),  rgb(28, 65, 121) , rgb(33, 152, 154) );
+  background: var(--div2-gradient);
 }
 .fatos02 div{
   width: 35%;
@@ -268,6 +307,11 @@ body
   justify-content: center;
   gap: 50px;
 }
+.fatos02 div:last-child{
+  background-image: url(./image/bg-projetos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------ABOUT ME----------------------------------------*/
@@ -280,6 +324,7 @@ body
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: var(--my-gradientSobre);
   
 }
 .conteudo
@@ -464,7 +509,7 @@ body
 /**/
 #projetos
 {
-  background: linear-gradient( rgb(14, 29, 51), rgb(14, 29, 51));
+  background: var(--my-gradientProjetos);
   width: 100%;
   height: 100vh;
   margin-right: 10vw;
@@ -632,9 +677,7 @@ body
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
-  
-  background: var(--bg-gradient);
-  
+  background: var(--my-gradientContato);
 }
 .contato-p1
 {
@@ -1303,16 +1346,17 @@ header
 .nav-list
 {
   position: absolute;
-  top: 8vh;
+  top: 10vh;
   right: 0;
   width: 50vw;
-  height: 92vh;
+  height: 90vh;
   background: var(--bg-header);
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
+  z-index: 2;
 }
 .nav-list li
 {
@@ -1352,6 +1396,7 @@ header
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-around;
+  z-index: 1;
 }
 .texto
 {
@@ -1412,6 +1457,7 @@ header
   background-size: cover;
   background-repeat: no-repeat;
   animation: bg linear 5s infinite;
+  z-index: 0;
 }
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------PROJECTS----------------------------------------*/
