@@ -15,6 +15,7 @@
     --my-gradientContato: linear-gradient( #1e3232 , #21653f); 
 
     --bg-header: linear-gradient(#1C1C1C, #696969);
+    --bg-headernav: linear-gradient(#696969, #1C1C1C);
 
     --color-texto: #fffafa;
     --color-sombra: #000000;
@@ -35,6 +36,7 @@
    --my-gradientContato: linear-gradient(#5F9EA0 , #B0E0E6 ); 
 
    --bg-header: linear-gradient(#696969, #1C1C1C);
+   --bg-headernav: linear-gradient(#1C1C1C, #696969);
 
   --color-white: #000000;
   --color-black: #b0abab;
@@ -962,7 +964,7 @@ form
 /**/
 #projetos
 {
-  background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
+  
   width: 100%;
   height: 100vh;
   margin-right: 10vw;
@@ -1219,9 +1221,7 @@ form
   gap: 0px;
   align-items: center;
   justify-content: center;
-  background-image: url(image/);
-  background-repeat: no-repeat;
-  background-size: cover;
+  
   
   
 }
@@ -1312,6 +1312,76 @@ form
 }
 @media (max-width: 900px)
 {
+/*----------------------------------CONFIGURAÇÃO PADRÃO---------------------------------*/
+.fatos{
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fatos01{
+  background: var(--div1-gradient);
+  
+}
+.fatos01 div{
+  width: 90%;
+  height: 80%;
+  border: 4px double rgba(0, 0, 0, 0.483);
+  background-color: rgba(211, 206, 206, 0.034);
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.fatos01 div:first-child{
+  background-image: url(./image/star.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+.terra{
+  border-radius: 100%;
+  animation: rotacao 40s linear infinite;
+  box-shadow: 1px -1px 5px rgb(12, 235, 224);
+}
+
+.fatos01 div:last-child{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.fatos02{
+  background: var(--div2-gradient);
+}
+.fatos02 div{
+  width: 90%;
+  height: 80%;
+  border: 4px double rgba(0, 0, 0, 0.483);
+  background-color: rgba(211, 206, 206, 0.034);
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.fatos02 div:first-child{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.fatos02 div:last-child{
+  background-image: url(./image/bg-projetos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------------------------------*/
 /*----------------------------------------HEADER----------------------------------------*/
 @keyframes navLinkFade/**/
 {
@@ -1331,7 +1401,7 @@ header
   overflow:visible;
   position: fixed;
   top: 0;
-  height: 10vh;
+  height: 10.1vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -1350,7 +1420,7 @@ header
   right: 0;
   width: 50vw;
   height: 90vh;
-  background: var(--bg-header);
+  background: var(--bg-headernav);
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -1390,11 +1460,16 @@ header
   
 }
 /*--------------------------------------ABOUT ME----------------------------------------*/
-.conteudo
-{
-  background-image: url(/image/bg1.png);
+#sobre{
+  background-image: url(./image/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  animation: bg linear 5s infinite;
+  z-index: 0;
+}
+.conteudo
+{
+  
   justify-content: space-around;
   z-index: 1;
 }
@@ -1452,13 +1527,7 @@ header
 {
   display: none;
 }
-#sobre{
-  background-image: url(./image/bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: bg linear 5s infinite;
-  z-index: 0;
-}
+
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------PROJECTS----------------------------------------*/
 
@@ -1531,7 +1600,7 @@ header
 /**/
 #projetos
 {
-  background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
+  
   width: 100%;
   height: 100vh;
   margin-right: 10vw;
@@ -1742,7 +1811,7 @@ header
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
-  background: var(--bg-gradient);
+  
   
 }
 .contato-p1
