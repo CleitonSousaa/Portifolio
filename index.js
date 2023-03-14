@@ -268,11 +268,6 @@ const contato = document.querySelector(".contato_");
 const position_sobre = sobreMim.getBoundingClientRect();
 const position_projetos = projetos.getBoundingClientRect();
 const position_contato = contato.getBoundingClientRect();
-const position_contato2 = position_contato.top - 100;
-console.log(position_contato.top)
-console.log(position_contato2)
-
-console.log(screenTop)
 
 window.addEventListener('scroll', function() {
   const scrollTop = window.scrollY;
@@ -288,7 +283,7 @@ window.addEventListener('scroll', function() {
     projetos.style.color='tomato'
     contatos.style.color='white'
   }
-  if(scrollTop > position_contato2 ){
+  if(scrollTop > position_contato.top + 150 ){
     sobre.style.color='white'
     projetos.style.color='white'
     contatos.style.color='tomato'
