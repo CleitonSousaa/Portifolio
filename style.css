@@ -463,7 +463,10 @@ section.active{
   scroll-behavior: smooth;
   background-color: #00000055;
   border-radius: 10px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 33.333%;
 }
 .carousel .draging
 {
@@ -503,12 +506,8 @@ section.active{
 .carousel img
 {
   height: 300px;
-  width: calc(100% / 3);
-  margin-left: 14px;
-  object-fit:cover;
   
 }
-
 .carousel img:first-child
 {
   margin-left: 0px;
@@ -921,6 +920,8 @@ form
   scroll-behavior: smooth;
   background-color: #0000002e;
   border-radius: 10px;
+  gap: 40%;
+  padding-left: 10%;
 }
 .carousel .draging
 {
@@ -960,10 +961,6 @@ form
 .carousel img
 {
   height: 300px;
-  width: calc(100% / 3);
-  margin-left: 14px;
-  object-fit:contain;
-  
 }
 
 .carousel img:first-child
@@ -1549,6 +1546,7 @@ header
   scroll-behavior: smooth;
   background-color: #0000002e;
   border-radius: 10px;
+  margin-bottom: 100px;
 }
 .carousel .draging
 {
@@ -1588,10 +1586,6 @@ header
 .carousel img
 {
   height: 300px;
-  width: calc(100% / 2);
-  margin-left: 34px;
-  object-fit:contain;
-  
 }
 
 .carousel img:first-child
@@ -2548,7 +2542,8 @@ header
   background-color: #0000002e;
   border-radius: 10px;
   height: 200px;
-  margin-bottom: 20px;
+  margin-top: -140px;
+  
 }
 .carousel .draging
 {
@@ -2567,7 +2562,7 @@ header
 }
 .wrapper i
 {
-  top: 50%;
+  top: -20%;
   cursor: pointer;
   font-size: 2rem;
   position: absolute;
@@ -2587,11 +2582,8 @@ header
 }
 .carousel img
 {
-  height: 300px;
-  width: calc(100% / 2);
-  margin-left: 34px;
-  object-fit:contain;
-  
+  height: 200px;
+
 }
 
 .carousel img:first-child
@@ -2715,16 +2707,13 @@ header
   text-shadow: 1px 1px 2px var(--color-sombra);
   gap: 0px;
   margin-bottom: 0px;
+  
 }
 .contextoP p{
   font-size: 0.8rem;
+  margin-top: -60px;
 }
-.contextoP h1{
-  margin-top: 10px;
-  font-size: 1.3rem;
-  color: #ff4400;
-  
-}
+
 .projeto03
 {
     display: flex;
