@@ -5,6 +5,7 @@ function getDistanceFromTheTop(element) {
   return document.querySelector(id).offsetTop;
 }
 
+
 function scrollToSection(event) {
   event.preventDefault();
   const distanceFromTheTop = getDistanceFromTheTop(event.target) - 70;
@@ -268,8 +269,10 @@ const position_sobre = sobreMim.getBoundingClientRect();
 const position_projetos = projetos.getBoundingClientRect();
 const position_contato = contato.getBoundingClientRect();
 const position_contato2 = position_contato.top - 100;
+console.log(position_contato.top)
+console.log(position_contato2)
 
-
+console.log(screenTop)
 
 window.addEventListener('scroll', function() {
   const scrollTop = window.scrollY;
