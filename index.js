@@ -8,7 +8,7 @@ function getDistanceFromTheTop(element) {
 
 function scrollToSection(event) {
   event.preventDefault();
-  const distanceFromTheTop = getDistanceFromTheTop(event.target) - 70;
+  const distanceFromTheTop = getDistanceFromTheTop(event.target);
   smoothScrollTo(0, distanceFromTheTop);
 }
 
@@ -49,7 +49,7 @@ const html = document.querySelector('html')
 chk.addEventListener('change', () => {
   html.classList.toggle('dark')
   
-})
+});
 
 
 
@@ -261,34 +261,40 @@ const projetos = document.querySelector('.projetoss');
 const contatos = document.querySelector('.contatoo');
 
 
-const sobreMim = document.querySelector(".sobre_mim");
-const projejos = document.querySelector(".projetos_");
-const contato = document.querySelector(".contato_");
+const sobreMim = document.querySelector(".sobre_mim").getBoundingClientRect()
+const projetoss = document.querySelector(".projetos_").getBoundingClientRect()
+const contato = document.querySelector(".contato_").getBoundingClientRect()
 
-const position_sobre = sobreMim.getBoundingClientRect();
-const position_projetos = projetos.getBoundingClientRect();
-const position_contato = contato.getBoundingClientRect();
+console.log('sobreMim top  = ' + (sobreMim.top + 1))
+console.log('sobreMim bottom  = ' + sobreMim.bottom)
+
+console.log('projetoss top  = ' + (projetoss.top + 1))
+console.log('projetoss bottom  = ' + projetoss.bottom)
+
+console.log('contato top  = ' + (contato.top + 1))
+console.log('contato bottom  = ' + contato.bottom)
 
 window.addEventListener('scroll', function() {
-  const scrollTop = window.scrollY;
-  if(scrollTop < position_projetos.top)
-  {
-    sobre.style.color='tomato'
-    projetos.style.color='white'
-    contatos.style.color='white'
-
-  }
-  if(scrollTop > position_projetos.top && scrollTop < position_contato.top){
-    sobre.style.color='white'
-    projetos.style.color='tomato'
-    contatos.style.color='white'
-  }
-  if(scrollTop > position_contato.top + 150 ){
-    sobre.style.color='white'
-    projetos.style.color='white'
-    contatos.style.color='tomato'
-  }
+  const scrollPosition = window.scrollY;
+  if (scrollPosition > sobreMim.top && scrollPosition < sobreMim.bottom) {
+    sobre.style.color = 'red';
+    projetos.style.color = 'white';
+    contatos.style.color = 'white';
+  } 
+  if (scrollPosition > projetoss.top && scrollPosition < projetoss.bottom) {
+    sobre.style.color = 'white';
+    projetos.style.color = 'red';
+    contatos.style.color = 'white';
+  } 
+  if (scrollPosition > contato.top && scrollPosition < contato.bottom ) {
+    sobre.style.color = 'white';
+    projetos.style.color = 'white';
+    contatos.style.color = 'red';
+  } 
 });
+
+
+
 
 
 /*scroll reveal */
@@ -309,6 +315,8 @@ function reveal(){
 }
 
 window.addEventListener('scroll', reveal);
+
+
 
 
 

@@ -94,7 +94,7 @@ header
 {
   position: fixed;
   top: 0;
-  height: 10vh;
+  height: 100px;
   background: var(--bg-header);
   width: 100vw;
   display: flex;
@@ -107,7 +107,8 @@ header
 }
 .logo
 {
-  width: 10vh;
+  width: 100px;
+  height: 100px;
 }
 .ctn_cb
 {
@@ -185,11 +186,11 @@ header
 .nav-list .sobree.ativo{
   color: red;
 }
-.nav-list .projetoss.ativo{
+.nav-list .projetoss.ativ{
   color: red;
 }
 .nav-list .contatoo.ativo{
-  color: red;
+  color: rgb(255, 0, 0);
 }
 
 
@@ -243,6 +244,7 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 section:nth-child(n + 2){
   position: relative;
@@ -255,79 +257,12 @@ section.active{
   transform: translateY(0);
   opacity: 1;
 }
-.fatos{
-  height: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-}
-
-.fatos01{
-  background: var(--div1-gradient);
-  
-}
-.fatos01 div{
-  width: 35%;
-  height: 80%;
-  border: 4px double rgba(0, 0, 0, 0.483);
-  background-color: rgba(211, 206, 206, 0.034);
-  border-radius: 15px;
-  padding: 0px 10px;
-}
-.fatos01 div:first-child{
-  background-image: url(./image/star.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  
-}
-.terra{
-  border-radius: 100%;
-  animation: rotacao 40s linear infinite;
-  box-shadow: 1px -1px 5px rgb(12, 235, 224);
-}
-
-.fatos01 div:last-child{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.fatos02{
-  background: var(--div2-gradient);
-}
-.fatos02 div{
-  width: 35%;
-  height: 80%;
-  border: 4px double rgba(0, 0, 0, 0.483);
-  background-color: rgba(211, 206, 206, 0.034);
-  border-radius: 15px;
-  padding: 0px 10px;
-}
-.fatos02 div:first-child{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-.fatos02 div:last-child{
-  background-image: url(./image/bg-projetos.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------ABOUT ME----------------------------------------*/
 #sobre
 {
+  margin-top: 150px;
   width: 100%;
   height: 100vh;
   margin: 0 auto;
@@ -439,17 +374,18 @@ section.active{
   color: var(--color-fundo);
   border-bottom: 1px solid var(--color-sublimacao);
 }
+
 .imagembg
 {
+  margin-top: 10vw;
   width: 100%;
   height: 100%;
   background-image: url(image/bg.png);
   background-repeat: no-repeat;
-  background-size: 30vw;
-  background-position-y: 150px;
+  position: absolute;
+  background-size: 100vh;
+  background-position: 500px 50px;
   animation: bg linear 5s infinite;
-  margin-top: 10vw;
-  
 
 }
 /*--------------------------------------------------------------------------------------*/
@@ -1318,76 +1254,7 @@ form
   .dark:root{
     --div1-gradient: linear-gradient(#029eec, #02023b);
   }
-/*----------------------------------CONFIGURAÇÃO PADRÃO---------------------------------*/
-.fatos{
-  height: 800px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.fatos01{
-  background: var(--div1-gradient);
-  
-}
-.fatos01 div{
-  width: 90%;
-  height: 80%;
-  border: 4px double rgba(0, 0, 0, 0.483);
-  background-color: rgba(211, 206, 206, 0.034);
-  border-radius: 15px;
-  padding: 0px 10px;
-}
-.fatos01 div:first-child{
-  background-image: url(./image/star.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  
-}
-.terra{
-  border-radius: 100%;
-  animation: rotacao 40s linear infinite;
-  box-shadow: 1px -1px 5px rgb(12, 235, 224);
-}
-
-.fatos01 div:last-child{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.fatos02{
-  background: var(--div2-gradient);
-}
-.fatos02 div{
-  width: 90%;
-  height: 80%;
-  border: 4px double rgba(0, 0, 0, 0.483);
-  background-color: rgba(211, 206, 206, 0.034);
-  border-radius: 15px;
-  padding: 0px 10px;
-}
-.fatos02 div:first-child{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-.fatos02 div:last-child{
-  background-image: url(./image/bg-projetos.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*--------------------------------------------------------------------------------------*/
 /*----------------------------------------HEADER----------------------------------------*/
 @keyframes navLinkFade/**/
 {
@@ -2222,6 +2089,13 @@ header
 {
   position: absolute;
   background-size: cover;
+}
+header{
+  height: 10vh;
+}
+.logo{
+  width: 10vh;
+  height: 10vh;
 }
 /*--------------------------------------------------------------------------------------*/
 /*--------------------------------------PROJECTS----------------------------------------*/
