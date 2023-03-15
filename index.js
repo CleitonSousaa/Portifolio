@@ -276,17 +276,17 @@ console.log('contato bottom  = ' + contato.bottom)
 
 window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
-  if (scrollPosition > sobreMim.top && scrollPosition < sobreMim.bottom) {
+  if (scrollPosition > (sobreMim.top - 100) && scrollPosition < (sobreMim.bottom + 100)) {
     sobre.style.color = 'red';
     projetos.style.color = 'white';
     contatos.style.color = 'white';
   } 
-  if (scrollPosition > projetoss.top && scrollPosition < projetoss.bottom) {
+  if (scrollPosition > (projetoss.top - 100) && scrollPosition < (projetoss.bottom + 100)) {
     sobre.style.color = 'white';
     projetos.style.color = 'red';
     contatos.style.color = 'white';
   } 
-  if (scrollPosition > contato.top && scrollPosition < contato.bottom ) {
+  if (scrollPosition > (contato.top - 100) && scrollPosition < (contato.bottom+ 100) ) {
     sobre.style.color = 'white';
     projetos.style.color = 'white';
     contatos.style.color = 'red';
