@@ -632,6 +632,7 @@ section.active{
   width: 100%;
   height: 100vh;
   background: var(--my-gradientContato);
+  overflow: hidden;
 }
 .contato-p1
 {
