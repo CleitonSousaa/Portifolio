@@ -286,7 +286,7 @@ window.addEventListener('scroll', function() {
     projetos.style.color = 'red';
     contatos.style.color = 'white';
   } 
-  if (scrollPosition > (contato.top - 100) && scrollPosition < (contato.bottom+ 100) ) {
+  if (scrollPosition > (contato.top - 100) && scrollPosition < (contato.bottom+ 300) ) {
     sobre.style.color = 'white';
     projetos.style.color = 'white';
     contatos.style.color = 'red';
