@@ -1,0 +1,144 @@
+.projetos{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background: rgb(11,9,2);
+    background: linear-gradient(293deg, rgb(0, 0, 0) 74%, rgb(95, 74, 58) 79%, rgb(0, 0, 0) 88%);
+    
+    
+}
+.conteiner_exibicao{
+ width: 1000px;
+ height: 100%;
+ display: flex;
+}
+.selecao{
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.187);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.selecao span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.exibicao_projetos{
+    width: 700px;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selecao p{
+    text-align: center;
+    border: 1px solid black;
+    width: 150px;
+    height: 25px;
+    padding-top: 3px;
+    border-radius: 5px;
+    background-color: #ffffff4d;
+}
+.selecao .fa-css3-alt:hover{
+    background: linear-gradient(293deg, rgba(30,199,215,1) 25%, rgba(25,68,219,1) 57%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-html5:hover{
+    background: linear-gradient(293deg, rgba(121,65,19,1) 9%, rgba(219,135,25,1) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-square-js:hover{
+    background: linear-gradient(293deg, rgb(238, 234, 2) 9%, rgb(157, 139, 7) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-react:hover{
+    background: linear-gradient(293deg, rgb(10, 238, 219) 9%, rgb(25, 161, 219) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-python:hover{
+    background: linear-gradient(293deg, rgb(10, 124, 238) 9%, rgb(219, 206, 25) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-php:hover{
+    background: linear-gradient(293deg, rgb(5, 60, 226) 9%, rgb(103, 11, 224) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-node:hover{
+    background: linear-gradient(293deg, rgb(56, 238, 10) 9%, rgb(35, 37, 38) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-database:hover{
+    background: linear-gradient(293deg, rgb(10, 143, 238) 9%, rgb(242, 138, 3) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.selecao .fa-layer-group:hover{
+    background: linear-gradient(293deg, rgb(5, 146, 2) 9%, rgb(101, 100, 100) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-book-atlas:hover{
+    background: linear-gradient(293deg, rgb(94, 94, 94) 9%, rgb(108, 108, 108) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-git:hover{
+    background: linear-gradient(293deg, rgb(238, 113, 10) 9%, rgb(242, 138, 3) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-github:hover{
+    background: linear-gradient(293deg, rgb(237, 240, 242) 9%, rgb(58, 58, 57) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.selecao .fa-markdown:hover{
+    background: linear-gradient(293deg, rgb(13, 146, 1) 9%, rgb(32, 27, 21) 66%);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+.exposicao_projeto{
+ width: 70%;
+ height: 70%;
+ position: relative;
+}
+.exposicao_projeto h1{
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.exposicao_projeto p{
+    background-color: #fff;
+    text-align: center;
+}
+.exposicao_projeto div{
+    height: 400px;
+    
+    margin-bottom: 20px;
+}
+.exposicao_projeto a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    font-weight: 800;
+    color: #010101;
+}

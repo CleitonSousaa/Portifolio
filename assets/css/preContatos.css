@@ -1,0 +1,12 @@
+.Pre_contatos{
+    height: 300px;
+}
+.Pre_contatos h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 3rem;
+}
+.Pre_contatos div{
+    height: 200px;
+    background-color: burlywood;
+}

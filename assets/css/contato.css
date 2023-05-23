@@ -1,0 +1,66 @@
+.contato{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner_contatos{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+.imagem_contato{
+    width: 600px;
+}
+.conteiner_formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 420px;
+    
+}
+.formulario{
+    
+    
+    
+}
+.fields{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.fieldHalf{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.fieldHalf input{
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+.field textarea{
+    width: 180px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.719);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.field{
+    
+}
+.actions{
+ display: flex;
+ list-style: none;
+ justify-content: end;
+ gap: 20px;
+}
+.actions input{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
