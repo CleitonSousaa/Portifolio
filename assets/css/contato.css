@@ -1,9 +1,10 @@
 .contato{
     width: 100%;
-    height: 800px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .conteiner_contatos{
     width: 1000px;

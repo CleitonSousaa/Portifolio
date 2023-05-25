@@ -5,8 +5,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    background: rgb(11,9,2);
-    background: linear-gradient(293deg, rgb(55, 51, 48) 74%, rgba(94,85,54,1) 79%, rgb(53, 50, 42) 88%);
+    background: linear-gradient(293deg, rgb(17, 17, 16) 74%, rgba(94,85,54,1) 79%, rgb(19, 18, 16) 88%);
+    padding-top: 50px;
 }
 .boas_vindas{
     color: #ffffff;

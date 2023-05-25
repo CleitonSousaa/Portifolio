@@ -1,11 +1,25 @@
 .projetos{
     width: 100%;
-    height: 700px;
+    height: 900px;
     display: flex;
     justify-content: center;
     background: rgb(11,9,2);
     background: linear-gradient(293deg, rgb(0, 0, 0) 74%, rgb(95, 74, 58) 79%, rgb(0, 0, 0) 88%);
     
+    
+}
+.titulo_projetos{
+    color: #fff;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.titulo_projetos i{
+    color: rgb(145, 118, 29);
     
 }
 .conteiner_exibicao{
@@ -116,7 +130,13 @@
 .exposicao_projeto{
  width: 70%;
  height: 70%;
- position: relative;
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: start;
+ gap: 50px;
+ 
 }
 .exposicao_projeto h1{
     color: #fff;
@@ -137,8 +157,7 @@
     background-color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
-    position: absolute;
-    right: 0;
+    
     font-weight: 800;
     color: #010101;
 }
