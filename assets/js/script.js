@@ -1,5 +1,3 @@
-/*--------------⬇⬇--SCROLL DA PAGINA--⬇⬇--------------*/
-//selecionar os itens
 const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
 
 function getDistanceFromTheTop(element) {
@@ -43,4 +41,3 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60);
 }
 
-/*--------------⬇⬇--SCROLL DA PAGINA--⬇⬇--------------*/

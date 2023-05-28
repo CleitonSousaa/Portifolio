@@ -6,7 +6,6 @@
 .skills{
     height: 600px;
     width: 1000px;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
     gap: 20px;
 }
 .icone{
@@ -35,5 +34,5 @@
     text-align: center;
 }
 .skill p{
-    text-align: center;
+    text-align:center;
 }
