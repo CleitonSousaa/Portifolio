@@ -41,3 +41,39 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60);
 }
 
+//sobre mim
+const SobreMimTitulo = document.querySelector('.apresentacao')
+const SobreMim01 = document.querySelector('.conteudo_lateral')
+const SobreMim02 = document.querySelector('.imagem_sobremim')
+
+const diferencial1= document.querySelector('.diferencial1')
+const diferencial2= document.querySelector('.diferencial2')
+
+
+const onScroll = (event) => {
+const scrollPosition = event.target.scrollingElement.scrollTop;
+console.log(scrollPosition)
+    //sobre mim
+    if(scrollPosition < 800){
+      
+      SobreMimTitulo.style.opacity = '0';
+      SobreMim01.style.transform = 'translateX(-1000px)';
+      SobreMim02.style.transform = 'translateX(1000px)';
+    }else{
+      
+      SobreMim01.style.transform = 'translateX(0px)';
+      SobreMim02.style.transform = 'translateX(0px)';
+      SobreMimTitulo.style.opacity = '1';
+    }
+    //diferencias
+    if(scrollPosition < 1800){
+      diferencial1.style.transform = 'translateX(350px)';
+      diferencial2.style.transform = 'translateX(-200px)';
+    }else{
+      diferencial1.style.transform = 'translateX(0px)';
+      diferencial2.style.transform = 'translateX(0px)';
+    }
+    
+    
+}
+document.addEventListener("scroll", onScroll)

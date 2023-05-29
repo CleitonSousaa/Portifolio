@@ -25,22 +25,22 @@
     grid-template-rows: 1000px 1000px 1000px;
 }
 .projeto1{
-    width: 1000px;
+    width: 100%;
     border-bottom: 5px solid white;
     margin: 0 auto;
     
 }
 .projeto2{
     
-    width: 1000px;
+    width: 100%;
     border-bottom: 5px solid white;
     margin: 0 auto;
     
 }
 .projeto3{
     
-    width: 1000px;
-    border-bottom: 5px solid white;
+    width: 100%;
+    
     margin: 0 auto;
     
     
