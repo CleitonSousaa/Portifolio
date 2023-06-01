@@ -87,14 +87,14 @@ window.addEventListener('scroll', function() {
     projetos.style.borderBottom= 'none'
     contatos.style.borderBottom= 'none'
   }
-  if(scrollPosition >= 2600 && scrollPosition < 5500){
+  if(scrollPosition >= 2600 && scrollPosition < 3700){
     home.style.borderBottom= 'none'
     sobre.style.borderBottom= 'none'
     projetos.style.borderBottom= '2px solid #ffbb33'
     projetos.style.paddingBottom= '3px'
     contatos.style.borderBottom= 'none'
   }
-  if(scrollPosition >= 5500) {
+  if(scrollPosition >= 3700) {
     home.style.borderBottom= 'none'
     sobre.style.borderBottomr= 'none'
     projetos.style.borderBottom= 'none'
