@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    background: linear-gradient(293deg, rgb(105, 105, 97) 74%, rgba(94,85,54,1) 79%, rgb(56, 53, 47) 88%);
+    background: linear-gradient(293deg, #133337 79%, #071a1c 88%);
     padding-top: 50px;
 }
 .boas_vindas{
@@ -26,6 +26,7 @@
     
     font-weight: 100;
     font-size: 42px;
+    white-space: nowrap;
 }
 .boas_vindas h2{
     text-align: right;
@@ -57,3 +58,63 @@
     height: 100%;
     width: 600px;
 }
+
+
+
+@media (max-width: 1280px){}
+@media (max-width: 900px){
+    .boas_vindas{
+        color: #ffffff;
+        height: 100%;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagem{
+        padding-top: 150px;
+        height: 100%;
+        width: 400px;
+    }
+    .boas_vindas h3{
+        font-size: 15px;
+    }
+    .boas_vindas h1{
+        font-size: 32px;
+    }
+    .boas_vindas h2{
+        
+    }
+    .boas_vindas p{
+       
+    }
+    .linkGithub{
+        margin-right: 20px;
+    }
+    .linkLinkedin{
+        
+    }
+}
+@media (max-width: 700px){
+    .cabecalho{
+        border: 1px solid black;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        background: linear-gradient(293deg, #133337 79%, #071a1c 88%);
+        
+    }
+    .imagem{
+        padding-top: 10px;
+        height: 100%;
+        width: 80%;
+    }
+}
+@media (max-width: 450px){
+    
+}
+@media (max-width: 360px){}
