@@ -121,5 +121,25 @@
         padding-left: 0px;
         padding-top: 0px;
     }
+    .conteiner_formulario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 350px;
+        
+    }
+    .conteiner_contatos h1{
+        text-align: center;
+    }
 }
-@media (max-width: 360px){}
+@media (max-width: 360px){
+    .conteiner_formulario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 300px;
+        
+    }
+}
