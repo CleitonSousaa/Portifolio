@@ -68,11 +68,11 @@ function time04(){
 
 //funcao geral
 function executarAcao() {
-    setTimeout(time01, 4000);
-    setTimeout(time02, 8000); 
-    setTimeout(time03, 12000); 
-    setTimeout(time04, 16000); 
-    setTimeout(executarAcao, 20000); 
+    setTimeout(time01, 3000);
+    setTimeout(time02, 6000); 
+    setTimeout(time03, 9000); 
+    setTimeout(time04, 12000); 
+    setTimeout(executarAcao, 15000); 
 }
 executarAcao();
 
