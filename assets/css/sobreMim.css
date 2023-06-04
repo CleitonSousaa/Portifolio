@@ -1,24 +1,23 @@
 .sobre_mim{
     border: 1px solid black;
     width: 100%;
-    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     background: rgb(11,9,2);
     background: linear-gradient(293deg, rgba(0, 0, 0, 0.719) 74%, rgb(55, 51, 48) 79%, rgba(0, 0, 0, 0.702) 88%);
     color: white;
-    gap: 70px;
-    padding-top: 100px;
+    padding: 150px 0px;
+    
 }
 .apresentacao{
     transition: 0.5s linear;
 }
 .apresentacao h1{
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2.5em;
+    font-weight: 200;
 }
 .apresentacao h1 i{
     color: rgb(145, 118, 29);
@@ -42,7 +41,7 @@
 }
 .texto_cl{
     display: flex;
-    height: 200px;
+    gap: 10px;
     width: 100%;
     align-items: center;
     justify-content: start;
@@ -70,10 +69,42 @@
     justify-content: center;
     gap: 5px;
 }
+.texto_cl span h3{
+    color: #115e68;
+    text-shadow: 0px 1px 2px #000;
+}
 
 
 
-@media (max-width: 1280px){}
+@media (max-width: 1280px){
+    .conteiner_conteudo{
+        flex-direction:column-reverse;
+    }
+    .conteudo_lateral{
+        width: 80%;
+        transition: 0.5s linear;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 900px){}
-@media (max-width: 450px){}
+@media (max-width: 450px){
+    .imagem_sobremim{
+        width: 350px;
+    }
+    .texto_cl{
+        gap: 0px;
+        padding-top: 20px;
+    }
+    .texto_cl span{
+        
+        gap: 15px;
+    }
+    
+    .texto_cl span p{
+        font-weight: 200;
+    }
+}
 @media (max-width: 360px){}
