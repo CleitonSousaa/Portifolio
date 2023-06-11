@@ -74,7 +74,7 @@
     gap: 10px;
     
 }
-.link_repositorio a{
+.link_repositorio .lr{
     font-size: 1.7em;
     text-decoration: none;
     color: rgb(1, 78, 87);
@@ -82,7 +82,7 @@
     background-color: rgb(255, 255, 255);
     padding: 5px 10px;
 }
-.link_repositorio a:hover{
+.link_repositorio .lr:hover{
     color: #b39c04;
 }
 .link_repositorio p{
@@ -91,6 +91,22 @@
     gap: 25px;
     font-size: 30px;
 }
+.fa-youtube{
+    position: absolute;
+    left: 120%;
+    top: 49%;
+    color: red;
+    text-decoration: none;
+    font-size: 3em;
+    background-color: #fff;
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+}
+.fa-youtube:hover{
+    font-size: 3.3rem;
+}
+
 
 @media (max-width: 1280px){}
 @media (max-width: 900px){}
