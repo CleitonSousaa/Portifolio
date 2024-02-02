@@ -81,30 +81,35 @@ console.log(scrollPosition)
 document.addEventListener("scroll", onScroll)
 
 
-//caroocel
+//carroocel
 
-const Carrocel_projetos= document.querySelector('.Carrocel_projetos')
-const teste_carrocel= document.querySelector('.teste_carrocel')
+const Carrocel_projetos = document.querySelector('.Carrocel_projetos');
+const conteiner_carrocel = document.querySelector('.Conteiner_carrocel');
+
+const btn_carrocel_left = document.querySelector('#btn_carrocel_left');
+const btn_carrocel_right = document.querySelector('#btn_carrocel_right');
+
+var Contador = 1;
+
+btn_carrocel_left.addEventListener('click', () => {
+  if (Contador > 1) {
+    Contador--;
+    console.log(`Contador: ${Contador}`);
+    conteiner_carrocel.style.left = `${(Contador - 1) * -100}vw`;
+    console.log(`Left: ${conteiner_carrocel.style.left}`);
+  }
+});
+
+btn_carrocel_right.addEventListener('click', () => {
+  if (Contador < 4) {
+    Contador++;
+    console.log(`Contador: ${Contador}`);
+    conteiner_carrocel.style.left = `${(Contador - 1) * -100}vw`;
+    console.log(`Left: ${conteiner_carrocel.style.left}`);
+  }
+});
 
 
-const btn_carrocel_left= document.querySelector('#btn_carrocel_left')
-const btn_carrocel_right= document.querySelector('#btn_carrocel_right')
-
-
-var Contador = 0;
-const tamanhoPulo = 50;
-
-btn_carrocel_left.addEventListener('click', ()=>{
-  Carrocel_projetos.style.backgroundColor='red'
-  teste_carrocel.style.left=`${Contador}px`
-  Contador-=tamanhoPulo;
-})
-
-btn_carrocel_right.addEventListener('click', ()=>{
-  Carrocel_projetos.style.backgroundColor='blue'
-  teste_carrocel.style.left=`${Contador}px`
-  Contador+=tamanhoPulo;
-})
 
 
 

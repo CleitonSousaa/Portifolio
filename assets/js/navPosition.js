@@ -37,7 +37,7 @@ window.addEventListener('scroll', function() {
     projetos.style.paddingBottom= '3px'
     contatos.style.borderBottom= 'none'
   }
-  if(scrollPosition > comprimento_em_tempo_real / 1.5) {
+  if(scrollPosition > comprimento_em_tempo_real / 1.4) {
     home.style.borderBottom= 'none'
     sobre.style.borderBottomr= 'none'
     projetos.style.borderBottom= 'none'
