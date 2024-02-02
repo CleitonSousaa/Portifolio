@@ -57,14 +57,16 @@
     white-space: nowrap;
 }
 .imagem{
-    padding-top: 100px;
     height: 100%;
     width: 600px;
 }
 
 
 
-@media (max-width: 1280px){}
+@media (max-width: 1280px){
+
+    
+}
 @media (max-width: 900px){
     .boas_vindas{
         color: #ffffff;
