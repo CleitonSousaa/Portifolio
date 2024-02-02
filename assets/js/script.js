@@ -50,6 +50,7 @@ const diferencial1= document.querySelector('.diferencial1')
 const diferencial2= document.querySelector('.diferencial2')
 
 
+
 const onScroll = (event) => {
 const scrollPosition = event.target.scrollingElement.scrollTop;
 console.log(scrollPosition)
@@ -65,8 +66,9 @@ console.log(scrollPosition)
       SobreMim02.style.transform = 'translateX(0px)';
       SobreMimTitulo.style.opacity = '1';
     }
+
     //diferencias
-    if(scrollPosition < 1800){
+    if(scrollPosition < 800){
       diferencial1.style.transform = 'translateX(350px)';
       diferencial2.style.transform = 'translateX(-200px)';
     }else{

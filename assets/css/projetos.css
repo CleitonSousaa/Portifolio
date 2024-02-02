@@ -1,5 +1,5 @@
 .projetos{
-    padding: 100px 0px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -25,7 +25,7 @@
 }
 .projeto1{
     width: 600px;
-    height: 800px;
+    height: 70vh;
     border-radius: 50px;
     box-shadow: -1px 1px 2px white,
                 10px 10px 20px white inset

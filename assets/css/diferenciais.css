@@ -1,6 +1,7 @@
 .diferenciais{
     border: 1px solid ;
     padding: 150px 0px;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
