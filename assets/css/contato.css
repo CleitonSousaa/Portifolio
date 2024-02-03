@@ -116,7 +116,7 @@
     color: #6F664F;
     padding: 10px 20px;
     border: none;
-    
+    cursor: pointer;
 }
 .actions input:hover{
     background-color: #000;

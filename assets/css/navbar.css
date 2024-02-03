@@ -9,7 +9,7 @@
     height: 70px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(293deg, #13333782 40%, rgba(54, 94, 82, 0.36) 50%, rgba(19, 51, 55, 0.385)90%);
+    background: linear-gradient(293deg, #133337 40%, rgba(54, 94, 82, 0.36) 50%, rgba(19, 51, 55, 0.385)90%);
     position: fixed;
     z-index: 999;
 }

@@ -112,4 +112,23 @@ btn_carrocel_right.addEventListener('click', () => {
 
 
 
+function validarFormulario() {
+  // Obtém referências aos campos do formulário
+  var nome = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var mensagem = document.getElementById('message').value;
+
+  // Verifica se todos os campos estão preenchidos
+  if (nome === '' || email === '' || mensagem === '') {
+      alert('Por favor, preencha todos os campos antes de enviar o formulário.');
+      return false; // Impede o envio do formulário
+  }
+
+  // Se todos os campos estão preenchidos, permite o envio do formulário
+  return true;
+}
+
+
+
+
 
