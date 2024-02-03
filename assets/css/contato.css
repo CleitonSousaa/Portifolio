@@ -1,63 +1,107 @@
 .contato{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 200px 0px;
+
+}
+.formulario{
+    padding-left: 20px;
 }
 .conteiner_contatos{
-    width: 1400px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    
+
 }
-.imagem_contato{
-    width: 600px;
+.ctn_formulario{
+    background-color: #6F664F;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 }
-.conteiner_formulario{
+.conteiner_img_ctt{
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
-    width: 500px;
-    
+}
+.imagem_contato{
+    width: 800px;
 }
 .formulario{
     
-    background-color: rgba(0, 0, 0, 0.204);
-    border-radius: 100% 0px 100% 0px;
-    
 }
+
+
 .fields{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     font-weight: bold;
+    
 }
+
+
 .fieldHalf{
     display: flex;
     flex-direction: column;
     font-weight: bold;
     margin-left: 20px;
 }
-.fieldHalf input{
-    background-color: rgba(0, 0, 0, 0.719);
-    width: 200px;
+.fieldHalf span p{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.fieldHalf span input{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
     height: 40px;
     padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    border: none;
 }
-.field textarea{
-    width: 180px;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.719);
+.formulario h1{
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.fieldHalf span textarea{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
     padding-left: 10px;
     padding-top: 10px;
-}
-.field{
+    font-size: 25px;
     
 }
+.social_media{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.social_media a{
+    text-decoration: none;
+    color: #6F664F;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 50px;
+    
+}
+.social_media a:hover{
+    color: #000;
+}
+
+
+
+
+
+
 .actions{
     margin-top: 20px;
     display: flex;
@@ -68,25 +112,30 @@
 
 }
 .actions input{
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-}
-
-.fieldHalf input::placeholder{
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: #6F664F;
+    padding: 10px 20px;
+    border: none;
     
 }
 .actions input:hover{
+    background-color: #000;
+}
+
+.input::placeholder{
+    color: white;
+    
+}
+.input:hover{
     color: rgb(242, 189, 83);
     
 }
 
-.field textarea::placeholder{
-    color: white;
+textarea::placeholder{
+    color: #6F664F;
 }
-.actions input::placeholder{
-    color: white;
+input::placeholder{
+    color: #6F664F;
 }
 
 
