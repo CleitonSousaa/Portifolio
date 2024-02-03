@@ -29,25 +29,32 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
-.projeto01{
-    
-   
+.btn_carrocel_left, .btn_carrocel_right{
+    padding: 2px 22px;
+    font-size: 50px;
+    font-weight: 800;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff2a;
+    color: #ffffffc6;
 }
-.projeto02{
-    
-    
+.btn_carrocel_left:hover, .btn_carrocel_right:hover{
+    color: #00bffffe;
+}
+.projeto01{   
+}
+.projeto02{  
 }
 .projeto03{
-   
-    
+  
 }
-.projeto04{
-    
-    
+.projeto04{ 
 }
+
+
+
 
 @media (max-width: 1280px){}
 @media (max-width: 900px){}
