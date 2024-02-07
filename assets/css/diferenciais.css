@@ -8,7 +8,6 @@
 }
 
 .conteiner_diferenciais{
-    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -51,7 +50,9 @@
 
 @media (max-width: 1280px){}
 @media (max-width: 900px){
-    
+    .diferenciais{
+        height: auto;
+    }
 }
 @media (max-width: 450px){
     .diferencial{
@@ -60,3 +61,16 @@
     }
 }
 @media (max-width: 360px){}
+
+
+/**************************** V TABLETS V *************************************/
+@media (max-width: 1280px){}
+@media (max-width: 900px){}
+/**************************** ^ TABLETS ^ *************************************/
+
+
+
+/**************************** V CELULAR V *************************************/
+@media (max-width: 450px){}
+@media (max-width: 360px){}
+/**************************** ^ CELULAR ^ *************************************/

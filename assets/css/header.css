@@ -61,65 +61,32 @@
     width: 600px;
 }
 
+@media (max-width: 1280px){}
 
+/**************************** V TABLETS V *************************************/
 
-@media (max-width: 1280px){
-
-    
-}
 @media (max-width: 900px){
-    .boas_vindas{
-        color: #ffffff;
-        height: 100%;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .imagem{
-        padding-top: 150px;
-        height: 100%;
-        width: 400px;
-    }
-    .boas_vindas h3{
-        font-size: 15px;
-    }
-    .boas_vindas h1{
-        font-size: 32px;
-    }
-    .boas_vindas h2{
-        
-    }
-    .boas_vindas p{
-       
-    }
-    .linkGithub{
-        margin-right: 20px;
-    }
-    .linkLinkedin{
-        
-    }
-}
-@media (max-width: 700px){
     .cabecalho{
-        border: 1px solid black;
-        width: 100%;
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-        background: linear-gradient(293deg, #133337 79%, #071a1c 88%);
+        position: relative;
+    }
+    .boas_vindas {
+        z-index: 1;
         
     }
-    .imagem{
-        padding-top: 10px;
-        height: 100%;
-        width: 80%;
+    .boas_vindas h3, .boas_vindas h1,.boas_vindas h2{
+        text-shadow: 1px 1px 1px #000;
     }
+    .imagem{
+        position: absolute;
+        opacity: 0.2;
+        z-index: 0;
+    }   
 }
-@media (max-width: 450px){
-    
-}
+/**************************** ^ TABLETS ^ *************************************/
+
+
+
+/**************************** V CELULAR V *************************************/
+@media (max-width: 450px){}
 @media (max-width: 360px){}
+/**************************** ^ CELULAR ^ *************************************/

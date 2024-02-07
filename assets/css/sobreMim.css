@@ -77,35 +77,33 @@
 
 
 
-@media (max-width: 1200px){
-    .conteiner_conteudo{
-        flex-direction:column-reverse;
+
+
+@media (max-width: 1280px){}
+
+/**************************** V TABLETS V *************************************/
+
+@media (max-width: 900px){
+    .sobre_mim{
+        position: relative;
+        height: 60vh;
     }
     .conteudo_lateral{
-        width: 80%;
-        transition: 0.5s linear;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        z-index: 1;
     }
-}
-
-@media (max-width: 900px){}
-@media (max-width: 450px){
     .imagem_sobremim{
-        width: 350px;
-    }
-    .texto_cl{
-        gap: 0px;
-        padding-top: 20px;
-    }
-    .texto_cl span{
-        
-        gap: 15px;
-    }
-    
-    .texto_cl span p{
-        font-weight: 200;
+        width: 90%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
     }
 }
+/**************************** ^ TABLETS ^ *************************************/
+
+
+
+/**************************** V CELULAR V *************************************/
+@media (max-width: 450px){}
 @media (max-width: 360px){}
+/**************************** ^ CELULAR ^ *************************************/
+
