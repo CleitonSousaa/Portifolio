@@ -10,8 +10,6 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
-
 }
 .ctn_formulario{
     background-color: #6F664F;
@@ -167,29 +165,3 @@ input::placeholder{
     }
 }
 /**************************** ^ TABLETS ^ *************************************/
-
-
-
-/**************************** V CELULAR V *************************************/
-@media (max-width: 450px){
-    .ctn_formulario{
-        width: 90%;
-    }
-    .fieldHalf span p{
-        padding-left: 5px;
-        
-    }
-    .formulario h1{
-        font-size: 20px;
-        padding-left: 25px;
-    }
-    .social_media a{
-        font-size: 30px;
-    }
-    .actions{
-        justify-content: center;
-
-    }
-}
-@media (max-width: 360px){}
-/**************************** ^ CELULAR ^ *************************************/

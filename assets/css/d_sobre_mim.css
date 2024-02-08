@@ -77,12 +77,69 @@
 
 
 
+.diferenciais{
+    border: 1px solid ;
+    padding: 50px 0px;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner_diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+}
+.diferencial{
+    border: 1px solid;
+    width: 450px;
+    height: 200px;
+    background-color: #4D5153;
+    border-radius: 40px;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s linear;
+}
+.diferencial h1{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #000000;
+}
+.diferencial span{
+    color: aqua;
+    display: flex;
+    gap: 17px;
+}
+.diferencial input{
+    width: 0px;
+    height: 0px;
+    
+}
+.diferencial .fa-circle{
+    color: white;
+    font-size: 0.5rem;
+    text-shadow: #D9C37E;
+}
+
+
+
 
 @media (max-width: 1280px){}
 
 /**************************** V TABLETS V *************************************/
 
 @media (max-width: 900px){
+    #SobreMim{
+        
+        height: 110vh;
+        overflow: hidden;
+    }
     .sobre_mim{
         position: relative;
         height: 60vh;
@@ -96,30 +153,10 @@
         z-index: 0;
         opacity: 0.1;
     }
+    .diferenciais{
+        height: auto;
+        padding: 10px;
+    }
 }
 /**************************** ^ TABLETS ^ *************************************/
-
-
-
-/**************************** V CELULAR V *************************************/
-@media (max-width: 450px){
-    .sobre_mim{
-        height: auto;
-    }
-    .conteudo_lateral{
-        width: 95%;
-    }
-    .texto_cl{
-        margin-left: 20px;
-        gap: 0px;
-        justify-content: center;
-        
-    }
-    .texto_cl h2{
-        margin-left: 20px;
-        padding-right:50px;
-    }
-}
-@media (max-width: 360px){}
-/**************************** ^ CELULAR ^ *************************************/
 
