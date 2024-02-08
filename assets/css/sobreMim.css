@@ -56,7 +56,6 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    
     padding-right: 70px;
 }
 .texto_cl h2 i{
@@ -103,7 +102,24 @@
 
 
 /**************************** V CELULAR V *************************************/
-@media (max-width: 450px){}
+@media (max-width: 450px){
+    .sobre_mim{
+        height: auto;
+    }
+    .conteudo_lateral{
+        width: 95%;
+    }
+    .texto_cl{
+        margin-left: 20px;
+        gap: 0px;
+        justify-content: center;
+        
+    }
+    .texto_cl h2{
+        margin-left: 20px;
+        padding-right:50px;
+    }
+}
 @media (max-width: 360px){}
 /**************************** ^ CELULAR ^ *************************************/
 

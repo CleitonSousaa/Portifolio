@@ -55,6 +55,7 @@
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
 }
 .fieldHalf span input{
     background-color: rgb(255, 255, 255);
@@ -108,8 +109,6 @@
     list-style: none;
     justify-content: end;
     gap: 30px;
-    
-
 }
 .actions input{
     background-color: rgb(255, 255, 255);
@@ -138,71 +137,59 @@ input::placeholder{
     color: #6F664F;
 }
 
-
-
 @media (max-width: 1280px){}
-@media (max-width: 900px){
-    .conteiner_contatos{
-        flex-direction: column-reverse;
-    }
-}
-@media (max-width: 450px){
-
-    .imagem_contato{
-        width: 90%;
-    }
-    .conteiner_contatos{
-        width: 100%;
-        
-    }
-    .formulario{
-        width: 90%;
-    }
-    .fieldHalf input{
-        background-color: rgba(0, 0, 0, 0.719);
-        width: 150px;
-        height: 40px;
-        padding-left: 0px;
-    }
-    .field textarea{
-        width: 150px;
-        height: 100px;
-        background-color: rgba(0, 0, 0, 0.719);
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-    .conteiner_formulario{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-        width: 350px;
-        
-    }
-    .conteiner_contatos h1{
-        text-align: center;
-    }
-}
-@media (max-width: 360px){
-    .conteiner_formulario{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-        width: 300px;
-        
-    }
-}
-
 
 /**************************** V TABLETS V *************************************/
-@media (max-width: 1280px){}
-@media (max-width: 900px){}
+
+@media (max-width: 900px){
+    .conteiner_contatos{
+        position: relative;
+    }
+    .conteiner_img_ctt{
+        position: absolute;
+        width: 100%;
+        opacity: 0.7;
+        z-index: 0;
+    }
+    .imagem_contato{
+        
+    }
+    .ctn_formulario{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #6f664f0e;
+        z-index: 1;
+    }
+    .contato{
+        background-color: #6f664fcd;
+    }
+}
 /**************************** ^ TABLETS ^ *************************************/
 
 
 
 /**************************** V CELULAR V *************************************/
-@media (max-width: 450px){}
+@media (max-width: 450px){
+    .ctn_formulario{
+        width: 90%;
+    }
+    .fieldHalf span p{
+        padding-left: 5px;
+        
+    }
+    .formulario h1{
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    .social_media a{
+        font-size: 30px;
+    }
+    .actions{
+        justify-content: center;
+
+    }
+}
 @media (max-width: 360px){}
 /**************************** ^ CELULAR ^ *************************************/
