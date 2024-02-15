@@ -1,0 +1,167 @@
+.contato{
+
+}
+.formulario{
+    padding-left: 20px;
+}
+.conteiner_contatos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.ctn_formulario{
+    background-color: #6F664F;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.conteiner_img_ctt{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem_contato{
+    width: 800px;
+}
+.formulario{
+    
+}
+
+
+.fields{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: bold;
+    
+}
+
+
+.fieldHalf{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.fieldHalf span p{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+.fieldHalf span input{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    border: none;
+}
+.formulario h1{
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.fieldHalf span textarea{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 25px;
+    
+}
+.social_media{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.social_media a{
+    text-decoration: none;
+    color: #6F664F;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 50px;
+    
+}
+.social_media a:hover{
+    color: #000;
+}
+
+
+
+
+
+
+.actions{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 30px;
+}
+.actions input{
+    background-color: rgb(255, 255, 255);
+    color: #6F664F;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.actions input:hover{
+    background-color: #000;
+}
+
+.input::placeholder{
+    color: white;
+    
+}
+.input:hover{
+    color: rgb(242, 189, 83);
+    
+}
+
+textarea::placeholder{
+    color: #6F664F;
+}
+input::placeholder{
+    color: #6F664F;
+}
+
+@media (max-width: 1280px){}
+
+/**************************** V TABLETS V *************************************/
+
+@media (max-width: 900px){
+    .conteiner_contatos{
+        position: relative;
+    }
+    .conteiner_img_ctt{
+        position: absolute;
+        width: 100%;
+        opacity: 0.7;
+        z-index: 0;
+    }
+    .imagem_contato{
+        
+    }
+    .ctn_formulario{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #6f664f0e;
+        z-index: 1;
+    }
+    .contato{
+        background-color: #6f664fcd;
+    }
+}
+/**************************** ^ TABLETS ^ *************************************/

@@ -50,6 +50,7 @@ const diferencial1= document.querySelector('.diferencial1')
 const diferencial2= document.querySelector('.diferencial2')
 
 
+
 const onScroll = (event) => {
 const scrollPosition = event.target.scrollingElement.scrollTop;
 console.log(scrollPosition)
@@ -65,8 +66,9 @@ console.log(scrollPosition)
       SobreMim02.style.transform = 'translateX(0px)';
       SobreMimTitulo.style.opacity = '1';
     }
+
     //diferencias
-    if(scrollPosition < 1800){
+    if(scrollPosition < 800){
       diferencial1.style.transform = 'translateX(350px)';
       diferencial2.style.transform = 'translateX(-200px)';
     }else{
@@ -77,3 +79,71 @@ console.log(scrollPosition)
     
 }
 document.addEventListener("scroll", onScroll)
+
+
+//carroocel
+
+const Carrocel_projetos = document.querySelector('.Carrocel_projetos');
+const conteiner_carrocel = document.querySelector('.Conteiner_carrocel');
+
+const btn_carrocel_left = document.querySelector('#btn_carrocel_left');
+const btn_carrocel_right = document.querySelector('#btn_carrocel_right');
+
+var Contador = 1;
+
+btn_carrocel_left.addEventListener('click', () => {
+  if (Contador > 1) {
+    Contador--;
+    console.log(`Contador: ${Contador}`);
+    conteiner_carrocel.style.left = `${(Contador - 1) * -100}vw`;
+    console.log(`Left: ${conteiner_carrocel.style.left}`);
+  }
+});
+
+btn_carrocel_right.addEventListener('click', () => {
+  if (Contador < 4) {
+    Contador++;
+    console.log(`Contador: ${Contador}`);
+    conteiner_carrocel.style.left = `${(Contador - 1) * -100}vw`;
+    console.log(`Left: ${conteiner_carrocel.style.left}`);
+  }
+});
+
+
+
+
+
+
+
+function validarFormulario() {
+  // Obtém referências aos campos do formulário
+  var nome = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var mensagem = document.getElementById('message').value;
+
+  // Verifica se todos os campos estão preenchidos
+  if (nome === '' || email === '' || mensagem === '') {
+      alert('Por favor, preencha todos os campos antes de enviar o formulário.');
+      return false; // Impede o envio do formulário
+  }
+
+  // Se todos os campos estão preenchidos, permite o envio do formulário
+  return true;
+}
+
+
+
+
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 900) {
+    
+    alert('Não disponivel para dispositivos moveis!');
+    }
+  if (window.innerWidth < 901) {
+      document.body.style.display = 'none';
+      
+  }else {
+    document.body.style.display = 'block'; // Exibe o body
+  }
+});

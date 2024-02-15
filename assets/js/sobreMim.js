@@ -21,48 +21,48 @@ function time01(){
     checkbox1.style.color="#fff"
     checkbox2.style.color="#fff"
     checkbox3.style.color="#fff"
-    textoCheck.innerHTML='Flexibilidade para trabalhar em diferentes ambientes'
+    textoCheck.innerHTML='Programming languages'
     checkbox2a.style.color="#ffdd33"
     checkbox1a.style.color="#fff"
     checkbox3a.style.color="#fff"
     checkbox4a.style.color="#fff"
-    textoCheck2.innerHTML='Backend - php | nodejs | python'
+    textoCheck2.innerHTML='Leadership'
 }
 function time02(){
     checkbox2.style.color="#ffdd33"
     checkbox3.style.color="#fff"
     checkbox1.style.color="#fff"
     checkbox4.style.color="#fff"
-    textoCheck.innerHTML='resolução de problemas de maneira lógica e eficaz'
+    textoCheck.innerHTML='Data analysis'
     checkbox1a.style.color="#ffdd33"
     checkbox2a.style.color="#fff"
     checkbox3a.style.color="#fff"
     checkbox4a.style.color="#fff"
-    textoCheck2.innerHTML='Banco de dados - MySql | Mongodb'
+    textoCheck2.innerHTML='Communication'
 }
 function time03(){
     checkbox3.style.color="#ffdd33"
     checkbox1.style.color="#fff"
     checkbox2.style.color="#fff"  
     checkbox4.style.color="#fff"
-    textoCheck.innerHTML='vontade de se manter atualizado'
+    textoCheck.innerHTML='Project management'
     checkbox4a.style.color="#ffdd33"
     checkbox1a.style.color="#fff"
     checkbox2a.style.color="#fff"
     checkbox3a.style.color="#fff"
-    textoCheck2.innerHTML='Outros - inglês | git & github | markdown'
+    textoCheck2.innerHTML='Teamwork'
 }
 function time04(){
     checkbox1.style.color="#ffdd33"
     checkbox2.style.color="#fff"
     checkbox3.style.color="#fff"
     checkbox4.style.color="#fff"
-    textoCheck.innerHTML='Abordagem criativa e implementação de soluções únicas'
+    textoCheck.innerHTML='Graphic design'
     checkbox3a.style.color="#ffdd33"
     checkbox1a.style.color="#fff"
     checkbox2a.style.color="#fff"  
     checkbox4a.style.color="#fff"
-    textoCheck2.innerHTML='Extensões - frameworks | bibliotecas e apis '
+    textoCheck2.innerHTML='Problem-solving'
 }
 
 
