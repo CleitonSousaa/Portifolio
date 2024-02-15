@@ -112,6 +112,9 @@ btn_carrocel_right.addEventListener('click', () => {
 
 
 
+
+
+
 function validarFormulario() {
   // Obtém referências aos campos do formulário
   var nome = document.getElementById('name').value;
@@ -132,3 +135,15 @@ function validarFormulario() {
 
 
 
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 900) {
+    
+    alert('Não disponivel para dispositivos moveis!');
+    }
+  if (window.innerWidth < 901) {
+      document.body.style.display = 'none';
+      
+  }else {
+    document.body.style.display = 'block'; // Exibe o body
+  }
+});
