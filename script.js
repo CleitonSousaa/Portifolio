@@ -1,4 +1,3 @@
-// Dados dos projetos (que você forneceu)
 const projetos = [
     {
       "id": "web",
@@ -6,28 +5,8 @@ const projetos = [
       "descricao": "Descrição do projeto .",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "links": {
-        "deploy": "https://link-para-deploy.com",
-        "repositorio": "https://github.com/repo-web"
-      }
-    },
-    {
-      "id": "mobile",
-      "nome": "Projeto Mobile",
-      "descricao": "Descrição do projeto .",
-      "tecnologias": ["React Native", "Expo"],
-      "links": {
-        "deploy": "https://link-para-deploy-mobile.com",
-        "repositorio": "https://github.com/repo-mobile"
-      }
-    },
-    {
-      "id": "mobile",
-      "nome": "Projeto Mobile",
-      "descricao": "Descrição do projeto.",
-      "tecnologias": ["React Native", "Expo"],
-      "links": {
-        "deploy": "https://link-para-deploy-mobile.com",
-        "repositorio": "https://github.com/repo-mobile"
+        "deploy": "#",
+        "repositorio": "#"
       }
     }
   ];
