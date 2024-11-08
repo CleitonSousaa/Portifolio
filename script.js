@@ -1,9 +1,9 @@
 const projetos = [
     {
       "id": "web",
-      "nome": "Projeto Web",
+      "nome": "Nome Do Projeto",
       "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, maxime animi asperiores molestiae odit illo, ea deserunt quia accusantium soluta magnam laboriosam doloribus placeat eius? Harum unde sunt quis quibusdam.",
-      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "tecnologias": ["TECNOLOGIA1", "TECNOLOGIA2"],
       "links": {
         "deploy": "#",
         "repositorio": "#"
