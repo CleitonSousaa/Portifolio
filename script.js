@@ -2,7 +2,7 @@ const projetos = [
     {
       "id": "web",
       "nome": "Projeto Web",
-      "descricao": "Descrição do projeto .",
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, maxime animi asperiores molestiae odit illo, ea deserunt quia accusantium soluta magnam laboriosam doloribus placeat eius? Harum unde sunt quis quibusdam.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "links": {
         "deploy": "#",
@@ -26,8 +26,8 @@ const projetos = [
       descricaoElement.textContent = projeto.descricao;
       projetoDiv.appendChild(descricaoElement);
 
-      const tecnologiasElement = document.createElement('p');
-      tecnologiasElement.textContent = `Tecnologias: ${projeto.tecnologias.join(', ')}`;
+      const tecnologiasElement = document.createElement('span');
+      tecnologiasElement.textContent = `| ${projeto.tecnologias.join(' | ')} |`;
       projetoDiv.appendChild(tecnologiasElement);
 
       const linksElement = document.createElement('div');
