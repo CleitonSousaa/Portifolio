@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +18,9 @@
 --cor-paragrafo-projetos: #373737;
 --cor-tecnologias-projetos: #000000;
 --cor-titulo-projetos: #000000;
+
+--font-bebas: "Bebas Neue", sans-serif;
+--font-nunito: "Nunito", sans-serif;
 }
 body{ 
 width: 100dvw;
@@ -29,10 +35,10 @@ color: var(--cor-paragrafos);
 .conteiner_geral
 {
 background-color: var(--bg-cg);
-
 width: 65dvw;
 padding: 30px;
 margin: 50px;
+font-family: var(--font-nunito);
 }
 .titulo{
 color: var(--cor-titulos);
@@ -41,6 +47,8 @@ border-bottom: 5px solid #808080;
 width: 200px;
 padding-bottom: 5px;
 margin-bottom: 10px;
+font-family: var(--font-bebas);
+letter-spacing: 0.8px;
 }
 .titulo_projetos{
 color: var(--cor-titulos);
@@ -105,4 +113,16 @@ margin-bottom: 16px;
 border-radius: 8px;
 
 border: 2px solid #808080;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .conteiner_geral{
+    width: 100dvw;
+    margin: 0;
+    }
+    .projeto{
+    width: 100%;
+    }
+
 }
